@@ -1,0 +1,18 @@
+
+.parallax-img {
+    width: 100%;
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 250px;
+}
+
+.text-bar-style-1 {
+    /* height: 120px; */
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #d0d0d0;
+}

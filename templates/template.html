@@ -1,0 +1,43 @@
+<!-- This is the basic template including  -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/css/bootstrap-css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/css/templateStyle.css" />
+
+</head>
+<body>
+    <!-- Display Flask flash messages -->
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <script>
+                var messages = {{ messages | safe }};
+                for (var i=0; i<messages.length; i++) {
+                    alert(messages[i]);
+                }
+            </script>
+        {% endif %}
+    {% endwith %}
+    <!-- The nav bar -->
+    <nav class="navbar navbar-expand-sm navbar-custom">
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item nav-item-custom">
+                <a class="nav-link nav-link-custom" href="/">Site</a>
+            </li>
+            <li class="nav-item nav-item-custom">
+                <a class="nav-link nav-link-custom" href="/aboutMe">About Me</a>
+            </li>
+            <li class="nav-item nav-item-custom">
+                <a class="nav-link nav-link-custom" href="#">Else</a>
+            </li>
+        </ul>
+    </nav>
+    {% block bodyblock %}
+    {% endblock %}
+</body>
+</html>

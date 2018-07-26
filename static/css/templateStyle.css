@@ -1,0 +1,18 @@
+body {
+    background-color: #595d5d;
+}
+.navbar-custom {
+    background-color: #424444;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav-link-custom {
+    color: #3fde3f;
+}
+
+.nav-link-custom:hover {
+    color: #288f28;
+}
+

@@ -1,0 +1,37 @@
+body {
+    background-color: transparent;
+}
+.image-area {
+    height: 100%;
+    background-color: black;
+    min-height: 500px;
+    display: inline-block;
+}
+
+.profile-section {
+    width: 90%;
+    left: 5%;
+    height: 85%;
+    min-height: 500px;
+    position: relative;
+    top: 75px;
+    display: grid;
+    grid-template-columns: 40% 58%;
+    column-gap: 2%;
+}
+
+.text-area {
+    position: relative;
+    min-height: 500px;
+    background-color: black;
+    display: inline-block;
+}
+
+
+.side-blur {
+    filter: blur(28px);
+    background-color: white;
+    position: fixed;
+    width: 5%;
+    height: 100%;
+}
