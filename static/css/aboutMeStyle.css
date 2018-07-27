@@ -23,8 +23,9 @@ body {
 .text-area {
     position: relative;
     min-height: 500px;
-    background-color: black;
     display: inline-block;
+    padding: 10px;
+    font-size: 20px;
 }
 
 
@@ -34,4 +35,21 @@ body {
     position: fixed;
     width: 5%;
     height: 100%;
+}
+
+.text-field {
+    background-color: #516477d7;
+    padding: 40px;
+    border-top-left-radius: 115px;
+    border-bottom-right-radius: 115px;
+    margin-bottom: 20px;
+    color: rgb(226, 222, 222);
+}
+
+.bar-button {
+    height: 350px;
+    background-color: #727474;
+    width: 50px;
+    position: absolute;
+    display: inline-block;
 }

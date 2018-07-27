@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="/static/css/aboutMeStyle.css">
 <link rel="stylesheet" href="/static/css/parallaxStyle.css">
-
+<link rel="stylesheet" href="/static/css/cubeStyle.css">
+<script src="/static/js/cube.js"></script>
 {% extends "template.html" %}
 
 {% block bodyblock %}
@@ -16,8 +17,16 @@
             <!-- Profile Image -->
         </div>
         <div class="text-area">
-            <!-- Text about me -->
+            <div class="text-field">
+                <!-- Text about me -->
+                Hello, my name is Arek Fielding. I was born on November 28th, 1998. Currently I am attending Western University
+                for Software Engineering. I have just finished my 2nd year of school and am looking foward to my 3rd year.
+            </div>
+            <div class="text-field">
+                
+            </div>
         </div>
+
     </div>
 </div>
 
@@ -25,8 +34,30 @@
     Keep scrolling for more about me
 </div>
 
-<div class="parallax-img" style="background-image: url(/static/images/img5.jpg); height: 400px;">
+<div class="parallax-img" style="background-image: url(/static/images/img2.jpg); height: 400px;">
 
+</div>
+
+<div class="text-bar-style-1">
+    Work and Education history below
+</div>
+
+<div style="height: 500px; width: 100%; background-color: lightgray;">
+    <div class="bar-button" onclick="rotateLeft()" style="left: 0;"></div>
+    <div class="bar-button" onclick="rotateRight()" style="right: 0;"></div>
+
+    <div class="cube-scene">
+        <div class="cube cube-show-front" id="cube">
+            <div class="cube-face cube-face-front">Front</div>
+            <div class="cube-face cube-face-left">Left</div>
+            <div class="cube-face cube-face-right">Right</div>
+            <div class="cube-face cube-face-back">Back</div>
+            <!-- <div class="cube-face cube-face-top">Top</div>
+            <div class="cube-face cube-face-bottom">Bottom</div> -->
+        </div>
+
+    </div>
+    <div style="height: 100px; width: 100xp;" onclick="rotateLeft()"></div>
 </div>
 
 {% endblock %}

@@ -7,11 +7,11 @@ def home():
     '''
     Main Page
     '''
-    return render_template('homePage.html')
+    return render_template('homePage.html', title="Hello World")
 
 @main.route('aboutMe')
 def about_me():
     '''
     About me
     '''
-    return render_template('aboutMe.html')
+    return render_template('aboutMe.html', title='About Me')
