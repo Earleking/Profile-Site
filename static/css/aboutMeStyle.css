@@ -8,6 +8,28 @@ body {
     display: inline-block;
 }
 
+.highschool-face {
+    display: grid;
+    grid-template-areas: 
+    'header header header header header'
+    'img img text text text';
+    grid-template-columns: 20% 5% 20% 20% 35%;
+    grid-template-rows: 15% 85%;
+    background-color: rgba(145, 196, 117, 0.8);
+}
+
+.university-face {
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'text text text'
+    'text text text';
+    grid-template-columns: 33% 33% 34%;
+    grid-template-rows: 15% 42% 43%;
+    background-color: rgba(147, 75, 172, 0.59);
+    
+}
+
 .profile-section {
     width: 90%;
     left: 5%;
@@ -25,7 +47,9 @@ body {
     min-height: 500px;
     display: inline-block;
     padding: 10px;
-    font-size: 20px;
+    font-size: 2vw;
+    /* font-size: 20px; */
+    font-size-adjust: unset;
 }
 
 
@@ -47,9 +71,40 @@ body {
 }
 
 .bar-button {
-    height: 350px;
+    height: 100%;
     background-color: #727474;
-    width: 50px;
+    max-width: 50px;
+    width: 5vw;
     position: absolute;
     display: inline-block;
+}
+
+.bar-button:hover {
+    cursor: pointer;
+}
+
+.c-title {
+    grid-area: header;  
+    font-size: 30px;
+    text-align: center; 
+}
+.c-image {
+    grid-area: img;
+    background-color: #516477d7;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.c-text {
+    grid-area: text;
+    font-size: 1.8vw;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.work-edu-section {
+    width: 100%; 
+    background-color: lightgray; 
+    display: relative;
 }

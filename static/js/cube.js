@@ -41,10 +41,11 @@ function rotateRight() {
             if(i == 3){
                 i = -1;
             }
-            // console.log((i - 1) % (sideListInNormal.length + 1));
-            newClass = newClass + sideListInNormal[(i + 1) % (sideListInNormal.length + 1)];
+            console.log(i);
+            console.log((i + 1));
+            newClass = newClass + sideListInNormal[(+i + +1) % (sideListInNormal.length + 1)];
             cube.classList.add(newClass);
-            // console.log(newClass);
+            console.log(newClass);
             return;
         }
     }

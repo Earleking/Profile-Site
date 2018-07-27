@@ -42,22 +42,44 @@
     Work and Education history below
 </div>
 
-<div style="height: 500px; width: 100%; background-color: lightgray;">
+<div style="work-edu-section">
     <div class="bar-button" onclick="rotateLeft()" style="left: 0;"></div>
     <div class="bar-button" onclick="rotateRight()" style="right: 0;"></div>
 
     <div class="cube-scene">
         <div class="cube cube-show-front" id="cube">
-            <div class="cube-face cube-face-front">Front</div>
-            <div class="cube-face cube-face-left">Left</div>
-            <div class="cube-face cube-face-right">Right</div>
+            <!-- Cube faces -->
+            <div class="cube-face cube-face-front highschool-face">
+                <div class="c-title">High School</div>
+                <div class="c-image"></div>
+                <div class="c-text">
+                    For high school I went to Gordon Graydon Memorial Secondary School. I attended this school in
+                    the International Business and Technology (IBT) program and graduated on the Honor Roll. At this school
+                    is where I first picked up programming, in my Grade 11 computer science class. At the time I just learned
+                    Visual Basic .net but have since also learned a variety of other programming languages.
+                </div>
+            </div>
+            <div class="cube-face cube-face-left ">
+            </div>
+
+            <div class="cube-face cube-face-right university-face">
+                <div class="c-title">University</div>
+                <!-- <div class="c-image" style="background-image: url(/static/images/icon.png); background-color: transparent;"></div> -->
+                <div class="c-text">
+                    <img src="/static/images/icon.png" alt="" style="width: 30%; max-width: 250px; margin: 10px;" align="right">
+                    I am currently attending Western University. I am now in my third year of Software Engineering. Here
+                    I have learned a lot more about programming as well as many other skills such as teamwork, writing
+                    3-D CAD just to name a few. I also attended my first hackaton, Hack Western, here. This hackathon
+                    really inspired me and since then I have already attended two others.
+                </div>
+            </div>
             <div class="cube-face cube-face-back">Back</div>
             <!-- <div class="cube-face cube-face-top">Top</div>
             <div class="cube-face cube-face-bottom">Bottom</div> -->
         </div>
-
     </div>
-    <div style="height: 100px; width: 100xp;" onclick="rotateLeft()"></div>
+    <div style="height: 50px"></div>
+
 </div>
 
 {% endblock %}
