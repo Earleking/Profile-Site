@@ -142,16 +142,24 @@ body {
     position: relative;
     display: grid;
     grid-template-columns: 50% 50%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
 }
 
 .technical-container {
     height: 100%;
     padding: 10px;
+    width: 90%;
+    left: 5%;
+    position: relative;
     background-color: #516477d7;
 }
 
 .other-container {
     padding: 10px;
+    width: 90%;
+    left: 2.5%;
+    position: relative;
     background-color: #516477d7;
 }
 
