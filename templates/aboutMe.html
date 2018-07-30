@@ -5,13 +5,14 @@
 {% extends "template.html" %}
 
 {% block bodyblock %}
-<div class="side-blur" style="left: 0;">
 
-</div>
-<div class="side-blur" style="left: 95%">
-
-</div>
 <div class="parallax-img" style="background-image: url(/static/images/img4.jpg); height: 100%;">
+    <div class="side-blur" style="left: 0;">
+
+    </div>
+    <div class="side-blur" style="left: 95%">
+    
+    </div>
     <div class="profile-section">
         <div class="image-area">
             <!-- Profile Image -->
@@ -38,18 +39,18 @@
 
 </div>
 
-<div class="text-bar-style-1">
-    Work and Education history below
+<div class="text-bar-style-2">
+    Work and Education
 </div>
 
-<div style="work-edu-section">
+<div class="work-edu-section">
     <div class="bar-button" onclick="rotateLeft()" style="left: 0;"></div>
     <div class="bar-button" onclick="rotateRight()" style="right: 0;"></div>
 
     <div class="cube-scene">
         <div class="cube cube-show-front" id="cube">
             <!-- Cube faces -->
-            <div class="cube-face cube-face-front highschool-face">
+            <div class="cube-face cube-face-left highschool-face" id="work-left-face">
                 <div class="c-title">High School</div>
                 <div class="c-image"></div>
                 <div class="c-text">
@@ -59,21 +60,35 @@
                     Visual Basic .net but have since also learned a variety of other programming languages.
                 </div>
             </div>
-            <div class="cube-face cube-face-left ">
+            <div class="cube-face cube-face-right work-face" id="work-right-face">
+                    <div class="c-title">Work - MDA</div>
+                    <!-- <div class="c-image"></div> -->
+                    <div class="c-text">
+                        <img src="/static/images/mdalogo.png" alt="" style="width: 40%; max-width: 425px;" align='right'>
+                        In the summers of 2017 and 2018 I took an internship at McDonald Detwiller and Associates.
+                        During my first summer I worked under the Missions group and helped with a few projects as
+                        well as did some scripting for excel. In 2018 I worked under the Software group and did work
+                        on interfacing programs as well as setting up a web-portal for one of MDA's programs. From this
+                        internship I was able to learn a lot about teamwork dynamics and workflow in an engineering 
+                        workplace as well as I got to apply many of the concepts I learned in school to real-world
+                        projects. 
+                    </div>
             </div>
 
-            <div class="cube-face cube-face-right university-face">
+            <div class="cube-face cube-face-front university-face" id="work-front-face">
                 <div class="c-title">University</div>
                 <!-- <div class="c-image" style="background-image: url(/static/images/icon.png); background-color: transparent;"></div> -->
                 <div class="c-text">
-                    <img src="/static/images/icon.png" alt="" style="width: 30%; max-width: 250px; margin: 10px;" align="right">
+                    <img src="/static/images/westernlogo.png" alt="" style="width: 30%; max-width: 250px; margin: 10px;" align="right">
                     I am currently attending Western University. I am now in my third year of Software Engineering. Here
                     I have learned a lot more about programming as well as many other skills such as teamwork, writing
                     3-D CAD just to name a few. I also attended my first hackaton, Hack Western, here. This hackathon
                     really inspired me and since then I have already attended two others.
                 </div>
             </div>
-            <div class="cube-face cube-face-back">Back</div>
+            <div class="cube-face cube-face-back" id="work-back-face">
+                    
+            </div>
             <!-- <div class="cube-face cube-face-top">Top</div>
             <div class="cube-face cube-face-bottom">Bottom</div> -->
         </div>
@@ -82,4 +97,61 @@
 
 </div>
 
+<div class="text-bar-style-2">
+    Skills and Stuff
+</div>
+<!-- Wtf I have no idea what to make here -->
+<!-- How do I display this in a decent manner? -->
+<div class="parallax-img" style="background-image: url(/static/images/img3.jpg);">
+    <div class="side-blur" style="left: 0;">
+
+    </div>
+    <div class="side-blur" style="left: 95%">
+    
+    </div>
+    <div class="skills-container">
+        <div class="technical-container">
+            <div class="skills-title">
+                Technical Skills
+            </div>
+            <div class="skills-list" style="color: white;">
+                <ul class="custom-list-1">
+                    <li>Programming Languages
+                        <ul class="custom-list-2">
+                            <li>C++</li>
+                            <li>Java</li>
+                            <li>Python</li>
+                            <li>Javascript, NodeJS, AngularJS</li>
+                        </ul>
+                    </li>
+                    <li>Web Development
+                        <ul class="custom-list-2">
+                            <li>HTML, CSS</li>
+                        </ul>
+                    </li>
+                    <li>Major Libraries and Frameworks
+                        <ul class="custom-list-2">
+                            <li>Tensorflow</li>
+                            <li>Flask and Django (Pyton)</li>
+                        </ul>
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="other-container">
+            <div class="skills-title">
+                Other Skills
+            </div>
+            <div class="skills-list">
+                <ul class="custom-list-1">
+                     <li>Quickly Learning and Adapting to New Project Frameworks</li>
+                     <li>Flexible Mindset</li>
+                     <li>Strong listener</li>
+                     <li>Something else</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}

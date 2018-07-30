@@ -54,7 +54,7 @@
     transform: rotateY(90deg) translateZ(calc(var(--face-width) / 2));
 }
 .cube-face-left {
-    background-color: rgba(255, 166, 0, 0.548);
+    /* background-color: rgba(255, 166, 0, 0.548); */
     -webkit-transform: rotateY(-90deg) translateZ(calc(var(--face-width) / 2));
     -moz-transform: rotateY(-90deg) translateZ(calc(var(--face-width) / 2));
     -ms-transform: rotateY(-90deg) translateZ(calc(var(--face-width) / 2));
@@ -82,7 +82,7 @@
     -moz-transform: translateZ(calc(var(--face-width) / 2 * -1)) rotateY(0deg);
     -ms-transform: translateZ(calc(var(--face-width) / 2 * -1)) rotateY(0deg);
     -o-transform: translateZ(calc(var(--face-width) / 2 * -1)) rotateY(0deg);
-    transform: translateZ(-50%) rotateY(0deg);
+    transform: translateZ(calc(var(--face-width) / 2 * -1)) rotateY(0deg);
 }
 .cube-show-back {
     -webkit-transform: translateZ(calc(var(--face-width) / 2 * -1)) rotateY(180deg);
@@ -96,14 +96,14 @@
     -moz-transform: translateZ(calc(var(--face-width) / 2 * -1)) rotateY(90deg);
     -ms-transform: translateZ(calc(var(--face-width) / 2 * -1)) rotateY(90deg);
     -o-transform: translateZ(calc(var(--face-width) / 2 * -1)) rotateY(90deg);
-    transform: translateZ(calc(var(--face-width) / 2 * -1)) rotateY(90deg);
+    transform: translateZ(calc(var(--face-width) / 2 * -1)) rotateY(-90deg);
 }
 .cube-show-left {
     -webkit-transform: translateZ(calc(var(--face-width) / 2 * -1)) rotateY(-90deg);
     -moz-transform: translateZ(calc(var(--face-width) / 2 * -1)) rotateY(-90deg);
     -ms-transform: translateZ(calc(var(--face-width) / 2 * -1)) rotateY(-90deg);
     -o-transform: translateZ(calc(var(--face-width) / 2 * -1)) rotateY(-90deg);
-    transform: translateZ(calc(var(--face-width) / 2 * -1)) rotateY(-90deg);
+    transform: translateZ(calc(var(--face-width) / 2 * -1)) rotateY(90deg);
 }
 .cube-show-top {
     -webkit-transform: translateZ(calc(var(--face-width) / 2 * -1)) rotateX(90deg);
@@ -120,3 +120,6 @@
     transform: translateZ(calc(var(--face-width) / 2 * -1)) rotateX(-90deg);
 }
 
+.to-front {
+    z-index: 1;
+}

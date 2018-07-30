@@ -1,6 +1,7 @@
 body {
     background-color: transparent;
 }
+
 .image-area {
     height: 100%;
     background-color: black;
@@ -10,24 +11,31 @@ body {
 
 .highschool-face {
     display: grid;
-    grid-template-areas: 
-    'header header header header header'
-    'img img text text text';
+    grid-template-areas: 'header header header header header' 'img img text text text';
     grid-template-columns: 20% 5% 20% 20% 35%;
     grid-template-rows: 15% 85%;
-    background-color: rgba(145, 196, 117, 0.8);
+    background-color: rgba(36, 70, 18, 0.92);
+    color: white;
 }
 
 .university-face {
     display: grid;
+    grid-template-areas: 'header header header' 'text text text' 'text text text';
+    grid-template-columns: 33% 33% 34%;
+    grid-template-rows: 15% 42% 43%;
+    background-color: rgba(107, 69, 121, 0.93);
+    color: white;
+}
+
+.work-face {
+    display: grid;
     grid-template-areas: 
     'header header header'
-    'text text text'
     'text text text';
     grid-template-columns: 33% 33% 34%;
     grid-template-rows: 15% 42% 43%;
-    background-color: rgba(147, 75, 172, 0.59);
-    
+    background-color: #12477ce1;
+    color: aliceblue;
 }
 
 .profile-section {
@@ -52,14 +60,31 @@ body {
     font-size-adjust: unset;
 }
 
-
 .side-blur {
-    filter: blur(28px);
-    background-color: white;
-    position: fixed;
+    position: absolute;
     width: 5%;
     height: 100%;
+    background: inherit;
+    filter: blur(5px);
+    overflow: hidden;
+    transform: translateZ(1px);
+    
+    /* background-color: transparent; */
 }
+
+    /* .blurred-box:after{
+        content: '';
+        width: 300px;
+        height: 300px;
+        background: inherit; 
+        position: absolute;
+        left: -25px;
+        right: 0;
+        top: -25px;  
+        bottom: 0;
+        box-shadow: inset 0 0 0 200px rgba(255,255,255,0.05);
+        filter: blur(10px);
+    } */
 
 .text-field {
     background-color: #516477d7;
@@ -84,18 +109,20 @@ body {
 }
 
 .c-title {
-    grid-area: header;  
+    grid-area: header;
     font-size: 30px;
-    text-align: center; 
+    text-align: center;
 }
+
 .c-image {
     grid-area: img;
-    background-color: #516477d7;
+    /* background-color: #516477d7; */
     width: 100%;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .c-text {
     grid-area: text;
     font-size: 1.8vw;
@@ -104,7 +131,40 @@ body {
 }
 
 .work-edu-section {
-    width: 100%; 
-    background-color: lightgray; 
-    display: relative;
+    width: 100%;
+    background-color: lightgray;
+    position: relative;
+}
+
+.skills-container {
+    width: 90%;
+    left: 5%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.technical-container {
+    height: 100%;
+    padding: 10px;
+    background-color: #516477d7;
+}
+
+.other-container {
+    padding: 10px;
+    background-color: #516477d7;
+}
+
+.skills-title {
+    text-align: center;
+    font-size: 32px;
+    font-style: oblique;
+}
+
+.custom-list-1 {
+    list-style-type: none;
+}
+
+.custom-list-2 {
+    list-style-type: square;
 }
