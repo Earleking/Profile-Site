@@ -1,5 +1,6 @@
 var sideListInNormal = ['front', 'left', 'right']
 function rotateRight() {
+    // window.history.pushState('hello world', 'TitleTest', '/');
     var cube = document.getElementById('cube');
     var direction = '';
     var lastclass = cube.classList[cube.classList.length - 1];

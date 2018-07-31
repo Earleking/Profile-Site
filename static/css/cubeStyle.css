@@ -1,13 +1,13 @@
 :root {
     --face-width: 80vw;
-    --face-height: 400px;
+    --face-height: 50vh;
 }
 
 .cube-scene {
     perspective: 600px;
     /* left: ; */
     width: var(--face-width);
-    height: var(--face-height);
+    max-height: var(--face-height);
     position: relative;
     margin: auto;
     padding-top: 25px;

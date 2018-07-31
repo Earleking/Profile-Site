@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="/static/css/parallaxStyle.css">
 <link rel="stylesheet" href="/static/css/cubeStyle.css">
 <script src="/static/js/cube.js"></script>
-{% extends "template.html" %}
+<!-- {% extends "template.html" %} -->
 
 {% block bodyblock %}
 
@@ -31,17 +31,11 @@
     </div>
 </div>
 
-<div class="text-bar-style-1">
-    Keep scrolling for more about me
-</div>
 
-<div class="parallax-img" style="background-image: url(/static/images/img2.jpg); height: 400px;">
 
-</div>
-
-<div class="text-bar-style-2">
+<div class="text-bar-style-3">
     Work and Education <br>
-    (Click left and right on me)
+    <div style="font-size: 1.2vw;">(Click left and right on me)</div>
 </div>
 
 <div class="work-edu-section">
@@ -98,11 +92,9 @@
 
 </div>
 
-<div class="text-bar-style-2">
+<div class="text-bar-style-3">
     Skills and Stuff
 </div>
-<!-- Wtf I have no idea what to make here -->
-<!-- How do I display this in a decent manner? -->
 <div class="parallax-img" style="background-image: url(/static/images/img3.jpg);">
     <div class="side-blur" style="left: 0;">
 
@@ -115,7 +107,7 @@
             <div class="skills-title">
                 Technical Skills
             </div>
-            <div class="skills-list" style="color: white;">
+            <div class="skills-list">
                 <ul class="custom-list-1">
                     <li>Programming Languages
                         <ul class="custom-list-2">
@@ -134,6 +126,7 @@
                         <ul class="custom-list-2">
                             <li>Tensorflow</li>
                             <li>Flask and Django (Pyton)</li>
+                            <li>PhoneGap</li>
                         </ul>
                         
                     </li>
@@ -142,15 +135,50 @@
         </div>
         <div class="other-container">
             <div class="skills-title">
-                Other Skills
+                Other Skills And Interests
             </div>
             <div class="skills-list">
                 <ul class="custom-list-1">
-                     <li>Quickly Learning and Adapting to New Project Frameworks</li>
-                     <li>Flexible Mindset</li>
-                     <li>Strong listener</li>
-                     <li>Something else</li>
+                    <li>Skills 
+                        <ul class="custom-list-2">
+                            <li>Quickly Learning and Adapting to New Project Frameworks</li>
+                            <li>Flexible Mindset</li>
+                            <li>Strong listener</li>
+                            <li>Willing to ask for advice</li>
+                        </ul>
+                    </li>
+                    <li>Interests
+                        <ul class="custom-list-2">
+                            <li>Martial Arts</li>
+                            <li>Hockey</li>
+                            <li>My Cat</li>
+                            <li>Food (Mainly Ramen)</li>
+                        </ul>
+                    </li>
+                     
                 </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="text-bar-style-3">
+    Personal Projects
+</div>
+<div class="parallax-img" style="background-image: url(/static/images/img2.jpg); height: 400px;">
+    <div class="side-blur" style="left: 0;"></div>
+    <div class="side-blur" style="left: 95%"></div>
+    
+    <div class="projects-container">
+        <div class="projects-description">
+            Hello! Again, thank you for taking the time to look through this website. Here are some of the personal 
+            projects that I have done. Some of them are solo while others are with one/more people. Clicking on any of
+            the project titles will take you to the github page for them if it is available.
+        </div>
+        <div class="project-container-1">
+            <div class="project-title">
+
             </div>
         </div>
     </div>

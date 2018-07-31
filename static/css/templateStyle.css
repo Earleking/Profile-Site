@@ -5,7 +5,7 @@ body {
     background-color: #424444;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
 }
 
 .nav-link-custom {
@@ -16,3 +16,19 @@ body {
     color: #288f28;
 }
 
+.load-overlay {
+    position: fixed;
+    background-color: rgba(43, 42, 42, 0.95);
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    
+}
+
+.load-image {
+    width: 10vw;
+    left: 45%;
+    top: 300px;
+    position: absolute;
+    
+}

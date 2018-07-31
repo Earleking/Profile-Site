@@ -1,0 +1,10 @@
+.main-text {
+    position: absolute;
+    max-width: 70%;
+    color: white;
+    font-size: 2.7vw;
+    font-size-adjust: initial;
+    top: 30vh;
+    left: 5%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

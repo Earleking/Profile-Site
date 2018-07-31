@@ -144,11 +144,12 @@ body {
     grid-template-columns: 50% 50%;
     padding-top: 2vh;
     padding-bottom: 2vh;
+    color: white;
 }
 
 .technical-container {
     height: 100%;
-    padding: 10px;
+    padding: 2.5vw;
     width: 90%;
     left: 5%;
     position: relative;
@@ -156,7 +157,7 @@ body {
 }
 
 .other-container {
-    padding: 10px;
+    padding: 2.5vw;
     width: 90%;
     left: 2.5%;
     position: relative;
@@ -165,14 +166,26 @@ body {
 
 .skills-title {
     text-align: center;
-    font-size: 32px;
+    font-size: 2.2vw;
     font-style: oblique;
 }
 
 .custom-list-1 {
     list-style-type: none;
+    padding: 0;
+    padding-left: 2.5vw;
+    font-size: 1.5vw;
 }
 
 .custom-list-2 {
     list-style-type: square;
+    font-size: 1.2vw;
+    padding-left: 4vw;
+}
+
+.projects-container {
+    width: 86%;
+    left: 7%;
+    position: relative;
+    background-color: #2a2b2ae1;
 }

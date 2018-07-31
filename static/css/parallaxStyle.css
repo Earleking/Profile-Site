@@ -13,7 +13,8 @@
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: #d0d0d0;   
+    color: #d0d0d0;
+    font-size: 2.6vw;  
 }
 
 .text-bar-style-2 {
@@ -22,4 +23,28 @@
     margin-bottom: 20px;
     color: #d0d0d0;
     font-size: 2.2vw;   
+}
+
+.text-bar-style-3 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #d0d0d0;
+    font-size: 1.8vw;   
+}
+
+.text-bar-style-4 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #d0d0d0;
+    font-size: 1.5vw;   
+}
+
+.text-bar-style-4 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #d0d0d0;
+    font-size: 1.2vw;   
 }
