@@ -8,9 +8,10 @@
     <title>{{title}}</title>
     <link rel="stylesheet" type="text/css" media="screen" href="/static/css/bootstrap-css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="/static/css/templateStyle.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/parallaxStyle.css">    
     <script src="/static/js/jquery-3.3.1.min.js"></script>
-
 </head>
+<!-- 59AD1D -->
 <body>
     <!-- Display Flask flash messages -->
     {% with messages = get_flashed_messages() %}
@@ -28,18 +29,26 @@
         <!-- Links -->
         <ul class="navbar-nav">
             <li class="nav-item nav-item-custom">
-                <a class="nav-link nav-link-custom" href="/">Site</a>
+                <a class="nav-link nav-link-custom suppress" href="/">Site</a>
             </li>
             <li class="nav-item nav-item-custom">
-                <a class="nav-link nav-link-custom" href="/aboutMe">About Me</a>
+                <a class="nav-link nav-link-custom suppress" href="/aboutMe">About Me</a>
             </li>
             <li class="nav-item nav-item-custom">
-                <a class="nav-link nav-link-custom" href="#">Else</a>
+                <a class="nav-link nav-link-custom suppress" href="/contactMe">Contact Me</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item nav-item-custom">
+                <a class="nav-link nav-link-custom" href="https://github.com/Earleking"><img class="nav-image" src="/static/images/github-icon.png"></a>
+            </li>
+            <li class="nav-item nav-item-custom">
+                <a class="nav-link nav-link-custom" href="https://www.linkedin.com/in/arek-fielding-81701a158/"><img class="nav-image" src="/static/images/linkedin-icon.png"></a>
             </li>
         </ul>
     </nav>
     
-    <div id="main">
+    <div id="main" class="main">
         <div id="load-overlay" class="load-overlay">
             <img src="/static/images/loading.gif" alt="" class="load-image">
         </div>

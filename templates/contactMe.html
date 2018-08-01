@@ -1,0 +1,37 @@
+<!-- <link rel="stylesheet" href="/static/css/parallaxStyle.css"> -->
+<link rel="stylesheet" type="text/css" href="/static/css/contactMeStyle.css">
+
+{% if inital_page is defined %}
+    {% extends "template.html" %}
+{% endif %}
+
+{% block bodyblock %}
+<div class="contact-container">
+    <div class="contact-title header-custom-2">
+        <b>Contact Me</b>
+    </div>
+    <table class="contact-table text-custom-3">
+        <tr>
+            <td><b>Name: </b></td>
+            <td><a>Arek Fielding</a></td>
+        </tr>
+        <tr>
+            <td><b>Phone Number:</b></td>
+            <td><a>(905) 808-1491</a></td>
+        </tr>
+        <tr>
+            <td><b>Email:</b></td>
+            <td><a>Arek.fielding@gmail.com</a></td>
+        </tr>
+        <tr>
+            <td><b>Github Link: </b></td>
+            <td><a class="contact-value" href="https://github.com/Earleking">https://github.com/Earleking</a></td>
+        </tr>
+        <tr>
+            <td><b>Linkedin Link: </b></td>
+            <td><a class="contact-value" href="https://www.linkedin.com/in/arek-fielding-81701a158/">https://www.linkedin.com/in/arek-fielding-81701a158/</a></td>
+        </tr>         
+    </table>
+</div>
+
+{% endblock %}

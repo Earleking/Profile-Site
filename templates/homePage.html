@@ -1,9 +1,12 @@
 <link rel="stylesheet" href="/static/css/homePageStyle.css">
-<link rel="stylesheet" href="/static/css/parallaxStyle.css">
 <script src="/static/js/homePage.js"></script>
-{% extends "template.html" %}
+{% if inital_page is defined %}
+    {% extends "template.html" %}
+    
+{% endif %}
 {% block bodyblock %}
-    <div class="parallax-img" style="background-image: url('/static/images/img3.jpg'); height: 100%;">
+
+    <div class="parallax-img" style="background-image: url('/static/images/img3.jpg'); height: 100vh;">
         <!-- <img src="/static/images/img1.jpeg" alt=""> -->
         <div class="main-text">
             Hello, <br>

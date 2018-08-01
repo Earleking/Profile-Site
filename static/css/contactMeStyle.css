@@ -1,0 +1,31 @@
+body {
+    background-image: url('/static/images/img2.jpg')
+}
+.contact-container {
+    padding-left: 5%;
+    position: relative;
+    top: 30px;
+}
+
+.contact-title {    
+    color: rgb(5, 189, 51);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.contact-detail {
+    color: white;
+}
+
+.contact-table {
+    color: white;
+    border-spacing: 50px 0;
+}
+
+.contact-value {
+    color: white;
+}
+.contact-value:hover {
+    color: rgb(11, 172, 56);
+    text-decoration: none;
+    cursor: pointer;
+}
