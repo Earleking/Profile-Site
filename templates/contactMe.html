@@ -6,32 +6,73 @@
 {% endif %}
 
 {% block bodyblock %}
-<div class="contact-container">
+<div class="parallax-img" style="background-image: url('/static/images/img2.jpg'); min-height: 175px;">
     <div class="contact-title header-custom-2">
         <b>Contact Me</b>
     </div>
-    <table class="contact-table text-custom-3">
-        <tr>
-            <td><b>Name: </b></td>
-            <td><a>Arek Fielding</a></td>
-        </tr>
-        <tr>
-            <td><b>Phone Number:</b></td>
-            <td><a>(905) 808-1491</a></td>
-        </tr>
-        <tr>
-            <td><b>Email:</b></td>
-            <td><a>Arek.fielding@gmail.com</a></td>
-        </tr>
-        <tr>
-            <td><b>Github Link: </b></td>
-            <td><a class="contact-value" href="https://github.com/Earleking">https://github.com/Earleking</a></td>
-        </tr>
-        <tr>
-            <td><b>Linkedin Link: </b></td>
-            <td><a class="contact-value" href="https://www.linkedin.com/in/arek-fielding-81701a158/">https://www.linkedin.com/in/arek-fielding-81701a158/</a></td>
-        </tr>         
-    </table>
+    <div class="contact-text text-custom-2">
+        Hello. Below you can find any of the required information about me. If you just want to send me
+        a quick message feel free to use form provided below. While you don't need an email, it would be
+        most appreciated if you did include an email so that I could get back to you. Thanks!
+    </div>
+</div>
+<div class="contact-container">
+    <div class="contact-table-container">
+        <div class="contact-table-title">
+            Contact Details
+        </div>
+        <table class="contact-table text-custom-3">
+            <tr>
+                <td><b>Name: </b></td>
+                <td><a>Arek Fielding</a></td>
+            </tr>
+            <tr>
+                <td><b>Phone Number:</b></td>
+                <td><a>(905) 808-1491</a></td>
+            </tr>
+            <tr>
+                <td><b>Email:</b></td>
+                <td><a>Arek.fielding@gmail.com</a></td>
+            </tr>
+            <tr>
+                <td><b>Github Link: </b></td>
+                <td><a class="contact-value" href="https://github.com/Earleking">https://github.com/Earleking</a></td>
+            </tr>
+            <tr>
+                <td><b>Linkedin Link: </b></td>
+                <td><a class="contact-value" href="https://www.linkedin.com/in/arek-fielding-81701a158/">https://www.linkedin.com/in/arek-fielding-81701a158/</a></td>
+            </tr>         
+        </table>
+    </div>
+    <div class="contact-form">
+        <form action="/submitEmail" method="POST">
+            <div class="form-format">
+                <div class="name-section">
+                    <div class="name-title">
+                        Name:
+                    </div>
+                    <input name="name" type="text" class="contact-input" required>
+                </div>
+                <div class="email-section">
+                    <div class="name-title">
+                        Email:
+                    </div>
+                    <input name="email" type="email" class="contact-input">
+                </div>
+                <div class="text-section">
+                    <div class="name-title">
+
+                    </div>
+                    <textarea name="text" id="" class="contact-text-input" placeholder="Whatever you want to say to me here"></textarea>
+
+                </div>
+
+                <button class="form-button">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
 </div>
 
 {% endblock %}

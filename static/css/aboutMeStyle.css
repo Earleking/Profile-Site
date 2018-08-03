@@ -1,8 +1,24 @@
 .image-area {
     height: 100%;
-    background-color: black;
-    min-height: 500px;
-    display: inline-block;
+    width: 100%;
+    /* background-color: black; */
+    /* min-height: 500px; */
+    /* width: 50px; */
+    margin: auto;
+    position: relative;
+}
+
+.profile-image {
+    /* max-height: 100%; */
+    /* max-width: 100%; */
+    width: 100%;
+    /* height: auto; */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 .highschool-face {
@@ -37,7 +53,6 @@
 .profile-section {
     width: 90%;
     left: 5%;
-    height: 85%;
     min-height: 500px;
     position: relative;
     display: grid;
@@ -187,7 +202,7 @@
 
 .project-entries {
     display: grid;
-    grid-template-columns: 50% 50%;
+    /* grid-template-columns: 50% 50%; */
 }
 
 .project-title {
@@ -214,3 +229,22 @@
     grid-area: text;
 }
 
+@media (max-width:575px) {
+    .project-entries {
+        grid-template-columns: 100%;
+    }
+
+    .profile-section {
+        grid-template-columns: 100%;
+        row-gap: 30px;
+    }
+    .profile-image {
+        position: relative;
+    }
+}
+
+@media (min-width:576px) {
+    .project-entries {
+        grid-template-columns: 50% 50%;
+    }
+}
