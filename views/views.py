@@ -13,6 +13,15 @@ def home():
         return render_template('homePage.html', title="Arek Fielding")
     return render_template('homePage.html', title="Arek Fielding", inital_page=True)
 
+@main.route('2', methods=['POST', 'GET'])
+def home2():
+    '''
+    Main Page
+    '''
+    if request.method == 'POST':
+        return render_template('homePage2.html', title="Arek Fielding")
+    return render_template('homePage2.html', title="Arek Fielding", inital_page=True)
+
 @main.route('aboutMe', methods=['POST', 'GET'])
 def about_me():
     '''

@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="/static/css/homePage2Style.css">
+
+{% if inital_page is defined %}
+    {% extends "template.html" %}
+{% endif %}
+
+{% block bodyblock %}
+
+<div class="main-container">
+    <div class="intro-block">
+        Arek Fielding
+    </div>
+    <div class="profile-section">
+        <div class="glass"></div>
+        <div class="home-text">About Me</div>
+    </div>
+    <div class="contact-section">
+        <div class="glass"></div>
+        <div class="home-text">Contact Me</div>
+    </div>
+    <div class="projects-section">
+        <div class="glass"></div>
+        <div class="home-text">My Projects</div>
+    </div>
+</div>
+{% endblock %}

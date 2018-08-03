@@ -82,7 +82,7 @@
     /* visibility: hidden; */
     /* width: 150px; */
     /* height: 150px; */
-    padding: 20px;
+    padding: 30px;
     background-color: rgb(70, 71, 70, .85);
     border-radius: 15px;
     color: white;
@@ -125,7 +125,7 @@
     }
 }
 
-@-webkit-keyframes fadeout {
+@keyframes fadeout {
     from {
         top: 25%;
         opacity: 1;
@@ -139,6 +139,13 @@
 .project-title {
     width: 100%;
     grid-area: title;
+    color: white;
+    text-decoration: none;
+}
+
+.project-title:hover {
+    cursor: pointer;
+    color: rgb(8, 92, 8);
 }
 
 .project-tech-title {

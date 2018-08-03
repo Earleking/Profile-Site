@@ -1,0 +1,96 @@
+.main-container {
+    display: grid;
+    grid-template-areas: 'profile contact' 'projects projects';
+    grid-template-rows: 67% 33%;
+    grid-template-columns: 50% 50%;
+    height: 100%;
+    /* position: absolute; */
+}
+
+.glass {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: inherit;
+    filter: blur(5px);
+    transition: 1s;
+}
+
+.profile-section:hover .glass {
+    filter: blur(0px);
+    /* box-shadow: 0 0 10px white; */
+    cursor: pointer;
+}
+
+.contact-section:hover .glass {
+    filter: blur(0px);
+    /* box-shadow: 0 0 10px white; */
+    cursor: pointer;
+}
+
+.projects-section:hover .glass {
+    filter: blur(0px);
+    /* box-shadow: 0 0 10px white; */
+    cursor: pointer;
+}
+
+.glass:hover {
+    background-color: white;
+}
+
+.profile-section {
+    grid-area: profile;
+    /* background-color: red; */
+    position: relative;
+    background-image: url('/static/images/dojo.jpg')
+    
+}
+
+.contact-section {
+    grid-area: contact;
+    /* background-color: blue; */
+    position: relative;
+    background-image: url('/static/images/phone.jpg')
+}
+
+.projects-section {
+    grid-area: projects;
+    /* background-color: green; */
+    position: relative;
+    background-image: url('/static/images/laptop.jpg')
+}
+
+.home-text {
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+@media(max-width:575px) {
+    .main-container {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(auto-fit, 300px);
+        grid-template-areas: none;
+    }
+}
+
+@-webkit-keyframes unblur {
+    from {
+        filter: blur(5px);
+    }
+    to {
+        filter: blur(0px);
+    }
+}
+
+@keyframes unblur {
+    from {
+        filter: blur(5px);
+    }
+    to {
+        filter: blur(0px);
+    }
+}
