@@ -1,0 +1,142 @@
+.main-container {
+    width: 70%;
+    left: 20%;
+    padding-top: 30vh;
+    position: relative;
+    display: grid;
+    /* grid-template-areas: 'profile contact' 'projects projects';
+    grid-template-rows: 60% 40%; */
+    grid-template-columns: 30% 60%;
+    /* height: 100%; */
+    color: white;
+    /* position: absolute; */
+}
+
+.glass {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: inherit;
+    filter: blur(5px);
+    transition: 1s;
+}
+
+.profile-section:hover .glass {
+    filter: blur(0px);
+    /* box-shadow: 0 0 10px white; */
+    cursor: pointer;
+}
+
+.contact-section:hover .glass {
+    filter: blur(0px);
+    /* box-shadow: 0 0 10px white; */
+    cursor: pointer;
+}
+
+.projects-section:hover .glass {
+    filter: blur(0px);
+    /* box-shadow: 0 0 10px white; */
+    cursor: pointer;
+}
+
+.glass:hover {
+    background-color: white;
+}
+
+.profile-section {
+    grid-area: profile;
+    /* background-color: red; */
+    position: relative;
+    background-image: url('/static/images/dojo.jpg')
+    
+}
+
+.contact-section {
+    grid-area: contact;
+    /* background-color: blue; */
+    position: relative;
+    background-image: url('/static/images/phone.jpg')
+}
+
+.projects-section {
+    grid-area: projects;
+    /* background-color: green; */
+    position: relative;
+    background-image: url('/static/images/laptop.jpg')
+}
+
+.home-text {
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.intro-block {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: white;
+}
+
+.background-grid {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-template-rows: repeat(auto-fill, 300px);
+}
+.finger-bullet {
+    background-image: url("/static/images/finger-point.png");
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-size: 30px;
+    transition: .5s;
+}
+
+.site-point:hover .finger-bullet {
+    background-image: url('/static/images/finger-point-fill.png');
+}
+
+.site-point:hover {
+    background: linear-gradient(to right,#3d3d3d, #212222);
+
+}
+
+.site-point {
+    color: white;
+    transition: .5s;
+    border-radius: 10px;
+}
+
+@media(max-width:575px) {
+    .main-container {
+        grid-template-columns: 100%;
+        /* grid-template-rows: repeat(auto-fit, 300px); */
+        grid-template-areas: none;
+    }
+}
+
+@-webkit-keyframes unblur {
+    from {
+        filter: blur(5px);
+    }
+    to {
+        filter: blur(0px);
+    }
+}
+
+@keyframes unblur {
+    from {
+        filter: blur(5px);
+    }
+    to {
+        filter: blur(0px);
+    }
+}

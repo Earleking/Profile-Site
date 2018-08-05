@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="/static/css/homePage2Style.css">
+
+{% if inital_page is defined %}
+    {% extends "template2.html" %}
+{% endif %}
+
+{% block bodyblock %}
+
+<div class="background-grid">
+    
+</div>
+
+<div class="main-container">
+    <div class="image-block">
+
+    </div>
+    <div class="text-block">
+        <div class="name-block header-custom-1">
+            Arek Fielding
+        </div>
+        <hr style="background-color: white;">
+        <div class="display-block">
+            I am a third year software student studying at Western University in Ontario, Canada.
+        </div>
+        <hr style="background-color: white;">
+        <div class="list-block">
+            Take a further look at my site to learn more about me.
+            <a class="bullet-text" href="/aboutMe">
+                <div class="site-point">
+                    <div class="finger-bullet"></div> Profile
+                </div>
+            </a>
+            <a href="/aboutMe">
+                <div class="site-point">
+                        <div class="finger-bullet"></div> Projects
+                </div>
+            </a>
+            <a href="/contactMe">
+                <div class="site-point">
+                        <div class="finger-bullet"></div> Contact Information
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

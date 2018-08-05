@@ -1,0 +1,63 @@
+<!-- This is the basic template including  -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{title}}</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/css/bootstrap-css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/css/template2Style.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/parallaxStyle.css">    
+    <script src="/static/js/jquery-3.3.1.min.js"></script>
+</head>
+<!-- 59AD1D -->
+<body>
+    <!-- Display Flask flash messages -->
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <script>
+                var messages = {{ messages | safe }};
+                for (var i=0; i<messages.length; i++) {
+                    alert(messages[i]);
+                }
+            </script>
+        {% endif %}
+    {% endwith %}
+    <div class="sidebar-custom">
+        <div class="sidebar-custom-top">
+            <div class="sidebar-entry">
+                <a class="nav-link nav-link-custom" href=""><img class="nav-image" src="/static/images/home-icon.png"><div class="glow"></div></a>
+            </div>
+            <div class="sidebar-entry">
+                <a class="nav-link nav-link-custom" href="/aboutMe"><img class="nav-image" src="/static/images/about-icon.png"></a>
+            </div>
+            <div class="sidebar-entry">
+                <a class="nav-link nav-link-custom" href="/contactMe"><img class="nav-image" src="/static/images/contact-icon.png"></a>
+            </div>
+        </div>
+        <div class="sidebar-custom-bottom">
+            <div class="sidebar-entry">
+                <a class="nav-link nav-link-custom" href="https://github.com/Earleking"><img class="nav-image" src="/static/images/github-icon.png"></a>
+            </div>
+            <div class="sidebar-entry">
+                <a class="nav-link nav-link-custom" href="https://www.linkedin.com/in/arek-fielding-81701a158/"><img class="nav-image" src="/static/images/linkedin-icon.png"></a>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div id="main" class="main">
+        <div id="load-overlay" class="load-overlay">
+            <img src="/static/images/loading.gif" alt="" class="load-image">
+        </div>
+        {% block bodyblock %}
+        
+        {% endblock %}
+
+    </div>
+</body>
+<script src="/static/js/template.js"></script>
+
+</html>
+
