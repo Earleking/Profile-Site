@@ -1,0 +1,29 @@
+.text-container {
+    color: white;
+    width: 70vw;
+    /* padding-left: 15vw; */
+    padding-bottom: 30px;
+}
+
+.main-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    text-align: center;
+}
+
+.redirect-button {
+    width: 200px;
+    border: 1px #3BE03E solid;
+    padding: 10px 50px;
+    display: inline-block;
+    color: white;
+    transition: .5s;
+}
+
+.redirect-button:hover {
+    background-color: lightgray;
+    color: rgb(32, 117, 34);
+    cursor: pointer;
+}

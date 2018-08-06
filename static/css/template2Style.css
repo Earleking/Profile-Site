@@ -1,15 +1,9 @@
 body {
     background: none;
-    background-color: #212222;
+    /* background-color: #212222; */
+    background-color: #0a0a0a;
 }
-.navbar-custom {
-    /* background-color: #424444; */
-    background-color: rgb(32, 31, 36);
-    position: fixed;
-    width: 100%;
-    z-index: 2;
-    
-}
+
 
 .nav-link-custom {
     color: #3fde3f;
@@ -44,7 +38,9 @@ body {
     width: 70px;
     z-index: 1;
     color: white;
-    background-color: rgb(17, 17, 17);
+    /* background-color: rgb(17, 17, 17); */
+    background-color: rgb(0, 0, 0);
+
     height: 100vh;
 }
 

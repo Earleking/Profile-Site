@@ -22,6 +22,24 @@ def home2():
         return render_template('homePage2.html', title="Arek Fielding")
     return render_template('homePage2.html', title="Arek Fielding", inital_page=True)
 
+@main.route('3', methods=['POST', 'GET'])
+def home3():
+    '''
+    Main Page
+    '''
+    if request.method == 'POST':
+        return render_template('homePage3.html', title="Arek Fielding")
+    return render_template('homePage3.html', title="Arek Fielding", inital_page=True)
+
+@main.route('4', methods=['POST', 'GET'])
+def home4():
+    '''
+    Main Page
+    '''
+    if request.method == 'POST':
+        return render_template('homePage4.html', title="Arek Fielding")
+    return render_template('homePage4.html', title="Arek Fielding", inital_page=True)
+
 @main.route('aboutMe', methods=['POST', 'GET'])
 def about_me():
     '''
