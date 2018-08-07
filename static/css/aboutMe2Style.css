@@ -1,7 +1,7 @@
 .intro-section {
     /* padding-left: 50%; */
     /* padding-top: 25%; */
-    padding: 25% 10% 0 10%;
+    padding: 20% 10% 0 10%;
     /* transform: translateY(-50%) translateX(-50%); */
     text-align: center;
     color: white;
@@ -14,7 +14,17 @@
     display: grid;
     grid-template-rows: auto auto auto;
     row-gap: 30px;
-    padding: 0 10%;
+    padding: 10% 10%;
    /* display: grid; */
     /* grid-template-areas: 'wTitle wTitle wTitle' 'wText wText wText' */
+}
+
+.work-section {
+    /* outline: 1px white solid; */
+}
+
+.center-text {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
