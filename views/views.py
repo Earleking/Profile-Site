@@ -9,36 +9,10 @@ def home():
     '''
     Main Page
     '''
+    
     if request.method == 'POST':
         return render_template('homePage.html', title="Arek Fielding")
     return render_template('homePage.html', title="Arek Fielding", inital_page=True)
-
-@main.route('2', methods=['POST', 'GET'])
-def home2():
-    '''
-    Main Page
-    '''
-    if request.method == 'POST':
-        return render_template('homePage2.html', title="Arek Fielding")
-    return render_template('homePage2.html', title="Arek Fielding", inital_page=True)
-
-@main.route('3', methods=['POST', 'GET'])
-def home3():
-    '''
-    Main Page
-    '''
-    if request.method == 'POST':
-        return render_template('homePage3.html', title="Arek Fielding")
-    return render_template('homePage3.html', title="Arek Fielding", inital_page=True)
-
-@main.route('4', methods=['POST', 'GET'])
-def home4():
-    '''
-    Main Page
-    '''
-    if request.method == 'POST':
-        return render_template('homePage4.html', title="Arek Fielding")
-    return render_template('homePage4.html', title="Arek Fielding", inital_page=True)
 
 @main.route('aboutMe', methods=['POST', 'GET'])
 def about_me():
@@ -46,8 +20,8 @@ def about_me():
     About me
     '''
     if request.method == 'POST':
-        return render_template('aboutMe2.html', title='About Me')
-    return render_template('aboutMe2.html', title='About Me', inital_page=True)
+        return render_template('aboutMe.html', title='About Me')
+    return render_template('aboutMe.html', title='About Me', inital_page=True)
 
 @main.route('contactMe', methods=['POST', 'GET'])
 def contact():
@@ -64,11 +38,11 @@ def projects():
         return render_template('projects.html', title='Projects')
     return render_template('projects.html', title='Projects', inital_page=True)
 
-@main.route('projects2')
-def projects2():
-    if request.method == 'POST':
-        return render_template('projects2.html', title='Projects')
-    return render_template('projects2.html', title='Projects', inital_page=True)
+# @main.route('projects2')
+# def projects2():
+#     if request.method == 'POST':
+#         return render_template('projects2.html', title='Projects')
+#     return render_template('projects2.html', title='Projects', inital_page=True)
 
 @main.route('submitEmail', methods=['POST'])
 def send_email():

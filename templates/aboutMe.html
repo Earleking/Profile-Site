@@ -1,266 +1,49 @@
 <link rel="stylesheet" href="/static/css/aboutMeStyle.css">
-<link rel="stylesheet" href="/static/css/cubeStyle.css">
-<script src="/static/js/cube.js"></script>
 
-<!-- Only reload template if this is an inital load -->
 {% if inital_page is defined %}
     {% extends "template.html" %}
 {% endif %}
 
 {% block bodyblock %}
-
-<div class="parallax-img" style="background-image: url(/static/images/img4.jpg); min-height: 100vh;">
-    <div class="side-blur" style="left: 0;">
-
-    </div>
-    <div class="side-blur" style="left: 95%">
-    
-    </div>
-    <div class="profile-section">
-        <div class="image-area">
-            <!-- Profile Image -->
-            <img src="/static/images/profile.jpg" class="profile-image">
+<div class="intro-container">
+    <div class="intro-section">
+        <div class="intro-title header-custom-1">
+            Who Am I?
         </div>
-        <div class="text-field text-custom-2">
-            <!-- Text about me -->
-            Hello, my name is Arek Fielding. I was born on November 28th, 1998. Currently I am attending Western University
-            for Software Engineering. I have just finished my 2nd year of school and am looking foward to my 3rd year. I
-            have some experience in web development (I made this site from scratch), and I am also very interested in learning
-            more about machine learning. Along with that I enjoy Martial Arts, I have been doing karate for some years and at
-            school I am part of the Brazillan Ju Jitsu Club. 
-        </div>
-
-    </div>
-</div>
-
-
-
-<div class="text-bar-style header-custom-3">
-    Work and Education <br>
-    <div class="text-custom-2">(Click left and right on me)</div>
-    <noscript>
-        <br> This section requires Javascript to work properly
-    </noscript>
-</div>
-
-<div class="work-edu-section">
-    <div class="bar-button" onclick="rotateLeft()" style="left: 0;"></div>
-    <div class="bar-button" onclick="rotateRight()" style="right: 0;"></div>
-
-    <div class="cube-scene">
-        <div class="cube cube-show-front" id="cube">
-            <!-- Cube faces -->
-            <div class="cube-face cube-face-left highschool-face" id="work-left-face">
-                <div class="c-title header-custom-3">High School</div>
-                <div class="c-image" style="background-image: url(/static/images/ggmsslogo.png)"></div>
-                <div class="c-text text-custom-3">
-                    For high school I went to Gordon Graydon Memorial Secondary School. I attended this school in
-                    the International Business and Technology (IBT) program and graduated on the Honor Roll. At this school
-                    is where I first picked up programming, in my Grade 11 computer science class. At the time I just learned
-                    Visual Basic .net but have since also learned a variety of other programming languages.
-                </div>
-            </div>
-            <div class="cube-face cube-face-right work-face" id="work-right-face">
-                    <div class="c-title header-custom-3">Work - MDA</div>
-                    <!-- <div class="c-image"></div> -->
-                    <div class="c-text text-custom-3">
-                        <img src="/static/images/mdalogo.png" alt="" style="width: 40%; max-width: 425px;" align='right'>
-                        In the summers of 2017 and 2018 I took an internship at McDonald Detwiller and Associates.
-                        During my first summer I worked under the Missions group and helped with a few projects as
-                        well as did some scripting for excel. In 2018 I worked under the Software group and did work
-                        on interfacing programs as well as setting up a web-portal for one of MDA's programs. From this
-                        internship I was able to learn a lot about teamwork dynamics and workflow in an engineering 
-                        workplace as well as I got to apply many of the concepts I learned in school to real-world
-                        projects. 
-                    </div>
-            </div>
-
-            <div class="cube-face cube-face-front university-face" id="work-front-face">
-                <div class="c-title header-custom-3">University</div>
-                <!-- <div class="c-image" style="background-image: url(/static/images/icon.png); background-color: transparent;"></div> -->
-                <div class="c-text text-custom-3">
-                    <img src="/static/images/westernlogo.png" alt="" style="width: 30%; max-width: 250px; margin: 10px;" align="right">
-                    I am currently attending Western University. I am now in my third year of Software Engineering. Here
-                    I have learned a lot more about programming as well as many other skills such as teamwork, writing
-                    3-D CAD just to name a few. I also attended my first hackaton, Hack Western, here. This hackathon
-                    really inspired me and since then I have already attended two others.
-                </div>
-            </div>
-            <div class="cube-face cube-face-back" id="work-back-face">
-                    
-            </div>
-            <!-- <div class="cube-face cube-face-top">Top</div>
-            <div class="cube-face cube-face-bottom">Bottom</div> -->
-        </div>
-    </div>
-    <div style="height: 50px"></div>
-
-</div>
-
-<div class="text-bar-style header-custom-3">
-    Skills and Stuff
-</div>
-<div class="parallax-img" style="background-image: url(/static/images/img3.jpg);">
-    <div class="side-blur" style="left: 0;">
-
-    </div>
-    <div class="side-blur" style="left: 95%">
-    
-    </div>
-    <div class="skills-container">
-        <div class="technical-container">
-            <div class="skills-title text-custom-1">
-                Technical Skills
-            </div>
-            <div class="skills-list">
-                <ul class="custom-list-1 text-custom-2">
-                    <li>Programming Languages
-                        <ul class="custom-list-2 text-custom-3">
-                            <li>C++</li>
-                            <li>Java</li>
-                            <li>Python</li>
-                            <li>Javascript, NodeJS, AngularJS</li>
-                        </ul>
-                    </li>
-                    <li>Web Development
-                        <ul class="custom-list-2 text-custom-3">
-                            <li>HTML, CSS</li>
-                        </ul>
-                    </li>
-                    <li>Major Libraries and Frameworks
-                        <ul class="custom-list-2 text-custom-3">
-                            <li>Tensorflow</li>
-                            <li>Flask and Django (Pyton)</li>
-                            <li>PhoneGap</li>
-                        </ul>
-                        
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="other-container">
-            <div class="skills-title text-custom-1">
-                Other Skills And Interests
-            </div>
-            <div class="skills-list">
-                <ul class="custom-list-1 text-custom-2">
-                    <li>Skills 
-                        <ul class="custom-list-2 text-custom-3">
-                            <li>Quickly Learning and Adapting to New Project Frameworks</li>
-                            <li>Flexible Mindset</li>
-                            <li>Strong listener</li>
-                            <li>Willing to ask for advice</li>
-                        </ul>
-                    </li>
-                    <li>Interests
-                        <ul class="custom-list-2 text-custom-3">
-                            <li>Martial Arts</li>
-                            <li>Hockey</li>
-                            <li>My Cat</li>
-                            <li>Food (Mainly Ramen)</li>
-                        </ul>
-                    </li>
-                     
-                </ul>
-            </div>
+        <div class="intro-text header-custom-3">
+            I am currently in my 3rd year at the University of Western Ontario in London, Ontario, Canada. There I 
+            study Software Engineering and am looking for an internship is a software field. Along with programming
+            I enjoy martial arts, video games, heist movies and playing with my cat. 
         </div>
     </div>
 </div>
-
-
-<div class="text-bar-style header-custom-3">
-    Personal Projects
-</div>
-<div class="parallax-img" style="background-image: url(/static/images/img2.jpg); padding-top: 20px; padding-bottom: 20px;">
-    <div class="side-blur" style="left: 0;"></div>
-    <div class="side-blur" style="left: 95%"></div>
-    
-    <div class="projects-container">
-        <div class="projects-description text-custom-3">
-            Hello! Again, thank you for taking the time to look through this website. Here are some of the personal 
-            projects that I have done. Some of them are solo while others are with one or more people. Clicking on any of
-            the project titles will take you to the github page for them if it is available.
-        </div>
-        <hr style="background-color: white;">
-        <div class="project-entries">
-            <div class="project-container-1">
-                <div class="project-title header-custom-3">
-                    <a href="https://github.com/Earleking/lol-API-2017">Riot Games API Challenge</a>
-                </div>
-                <div class="project-details text-custom-3">
-                    This project was done at the end of 2017 for the Riot Games API Challenge. The challenge was to create
-                    a tool that would help introduce new players to some of the newer features in the game using Riot Games'
-                    API. Me and my partner created a two-part website. The first part was to analyze top players games and how
-                    they used these new features. We then used this data to help newer players find more optimal uses of these
-                    features. The other part was a more in-dept teaching section where we detailed what these new features do
-                    and the strategy behind when and why they are good. My group finished second in our category.
-                </div>
-            </div>
-            <div class="project-container-1">
-                <div class="project-title header-custom-3">
-                    <a href="https://github.com/Earleking/Treeline-Site">Treeline.GG</a>
-                </div>
-                <div class="project-details text-custom-3">
-                    This website is still an on-going project. This project is a statistics site that analyizes game stats from 
-                    a specific game mode in League of Legends called Twisted Treeline. Hence the name TreelineGG. We scrape the 
-                    data from Riot's API and store the relavent data in our own database. Then every once in a while our analysis
-                    engine examines the data and detemines best practices. Both the raw data and the analyzied data will be viewable
-                    on the website eventually.
-                </div>
-            </div>
-            <div class="project-container-1">
-                <div class="project-title header-custom-3">
-                    <a href="https://github.com/Earleking/Earle-Bot">Earle-Bot</a>
-                </div>
-                <div class="project-details text-custom-3">
-                    This project is a bot for a popular social program (Discord). It reads the text messages that are sent in the chat
-                    and if they are sent in a specific format, in this case preceded by a slash(/), then they would be
-                    interpreted as a command. Using this any user can feed commands to my bot and have it do various tasks.
-                    Some of these tasks include playing music, searching imgur and reddit, as well as rolling a dice amoung
-                    other things. This was an earlier project of mine to help me get more familer with Node.js and has since
-                    served it's purpose and is no longer continued. If I were to want to continue this, I would likely restart
-                    from scratch because since writing this program I have learned alot about better coding practices and
-                    in particular better program architecture.
-                </div>
-            </div>
-            <div class="project-container-1">
-                <div class="project-title header-custom-3">
-                    <a href="https://github.com/Earleking/Flight-Oracle">Flight Oracle</a>
-                </div>
-                <div class="project-details text-custom-3">
-                    This website was created in a group of 4 for the Hack Western Hackathon. This project uses machine learning
-                    along with The Weather Network's API to predict the chances of a flight being delayed on a given day. To
-                    create this historical flight data was gathered from the past years and then filtered before being fed into
-                    a basic FeedFoward neural network. Due to short time span only outbound flights were considered with no
-                    consideration towards the weather at the destination. Also, only USA airports are selectable. Due to The
-                    Weather Network's API only being available during the hackaton this site is now retired.
-                </div>
-            </div>
-            <div class="project-container-1">
-                <div class="project-title header-custom-3">
-                    <a href="https://github.com/Earleking/Profile-Site">Profile Site</a>
-                </div>
-                <div class="project-details text-custom-3">
-                    Hey look! This project is this very site. I made this site hoping to impresses someone who might be
-                    looking at this site with my web skills. Hopefully I succeceded, maybe not. If I did it would be great
-                    if you could let me know. Similarly if my website falls flat I would be appreciative if you let me
-                    know where exactly I went wrong. My design sense isn't the best and I am always learning so if you
-                    could help me I would love that.
-                </div>
-            </div>
-            <div class="project-container-1">
-                <div class="project-title header-custom-3">
-                    <a href="https://github.com/Earleking">My Next Project</a>
-                </div>
-                <div class="project-details text-custom-3">
-                    This spot is here for my next project. At the moment I am not sure what it will be. Might be some
-                    Artifical intellegence game, might not. I was thinking of starting simple and maybe trying to teach
-                    an AI to play tic-tac-toe. I also want to improve my proficiency in mobile app development. Sometime
-                    soon I am likely to create an application using either React Native or PhoneGap. Anyway, whatever it
-                    is I will continue learning new concepts and creating things I enjoy. 
-                </div>
-            </div>
-        </div>
+<div class="history-section">
+    <div class="work-section text-custom-3">
+        <img src="/static/images/mdalogo.png" alt="" style="width: 40%; max-width: 425px;" align='right'>
+        In the summers of 2017 and 2018 I took an internship at McDonald Detwiller and Associates.
+        During my first summer I worked under the Missions group and helped with a few projects as
+        well as did some scripting for excel. In 2018 I worked under the Software group and did work
+        on interfacing programs as well as setting up a web-portal for one of MDA's programs. From this
+        internship I was able to learn a lot about teamwork dynamics and workflow in an engineering 
+        workplace as well as I got to apply many of the concepts I learned in school to real-world
+        projects. 
     </div>
+    <div class="university-section text-custom-3">
+        <img src="/static/images/westernlogo.png" alt="" style="width: 30%; max-width: 250px; margin: 10px;" align="right">
+        I am currently attending Western University. I am now in my third year of Software Engineering. Here
+        I have learned a lot more about programming as well as many other skills such as teamwork, writing
+        3-D CAD just to name a few. I also attended my first hackaton, Hack Western, here. This hackathon
+        really inspired me and since then I have already attended two others.
+    </div>
+    <div class="highschool-section text-custom-3">
+        <img src="/static/images/ggmsslogo.png" alt="" style="width: 30%; max-width: 250px; margin: 10px;" align="left">
+        For high school I went to Gordon Graydon Memorial Secondary School. I attended this school in
+        the International Business and Technology (IBT) program and graduated on the Honor Roll. At this school
+        is where I first picked up programming, in my Grade 11 computer science class. At the time I just learned
+        Visual Basic .net but have since also learned a variety of other programming languages.
+    </div>
+
 </div>
+
+
 {% endblock %}

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{title}}</title>
     <link rel="stylesheet" type="text/css" media="screen" href="/static/css/bootstrap-css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="/static/css/template2Style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/css/templateStyle.css" />
     <link rel="stylesheet" type="text/css" href="/static/css/parallaxStyle.css">    
     <script src="/static/js/jquery-3.3.1.min.js"></script>
 </head>
@@ -24,28 +24,29 @@
             </script>
         {% endif %}
     {% endwith %}
-    <div class="sidebar-custom">
-        <div class="sidebar-custom-top">
-            <div class="sidebar-entry">
-                <a class="nav-link nav-link-custom" href="/" id="test"><img class="nav-image" src="/static/images/home-icon.png"></a>
-            </div>
-            <div class="sidebar-entry">
-                <a class="nav-link nav-link-custom" href="/aboutMe"><img class="nav-image" src="/static/images/about-icon.png"></a>
-            </div>
-            <div class="sidebar-entry">
-                <a class="nav-link nav-link-custom" href="/contactMe"><img class="nav-image" src="/static/images/contact-icon.png"></a>
-            </div>
-        </div>
-        <div class="sidebar-custom-bottom">
-            <div class="sidebar-entry">
+    <!-- The nav bar -->
+    <nav class="navbar navbar-expand-sm navbar-custom">
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item nav-item-custom">
+                <a class="nav-link nav-link-custom suppress" href="/">Site</a>
+            </li>
+            <li class="nav-item nav-item-custom">
+                <a class="nav-link nav-link-custom suppress" href="/aboutMe">About Me</a>
+            </li>
+            <li class="nav-item nav-item-custom">
+                <a class="nav-link nav-link-custom suppress" href="/contactMe">Contact Me</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item nav-item-custom">
                 <a class="nav-link nav-link-custom" href="https://github.com/Earleking"><img class="nav-image" src="/static/images/github-icon.png"></a>
-            </div>
-            <div class="sidebar-entry">
+            </li>
+            <li class="nav-item nav-item-custom">
                 <a class="nav-link nav-link-custom" href="https://www.linkedin.com/in/arek-fielding-81701a158/"><img class="nav-image" src="/static/images/linkedin-icon.png"></a>
-            </div>
-        </div>
-    </div>
-    
+            </li>
+        </ul>
+    </nav>
     
     <div id="main" class="main">
         <div id="load-overlay" class="load-overlay">
@@ -60,4 +61,3 @@
 <script src="/static/js/template.js"></script>
 
 </html>
-

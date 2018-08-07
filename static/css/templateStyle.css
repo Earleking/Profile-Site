@@ -1,15 +1,9 @@
 body {
     background: none;
-    background-color: #595d5d;
+    /* background-color: #212222; */
+    background-color: #0a0a0a;
 }
-.navbar-custom {
-    /* background-color: #424444; */
-    background-color: rgb(32, 31, 36);
-    position: fixed;
-    width: 100%;
-    z-index: 2;
-    
-}
+
 
 .nav-link-custom {
     color: #3fde3f;
@@ -33,22 +27,75 @@ body {
     left: 45%;
     top: 300px;
     position: absolute;
-    
 }
 
 .nav-image {
     width: 40px;
 }
 
+.sidebar-custom {
+    position: fixed;
+    width: 70px;
+    z-index: 1;
+    color: white;
+    /* background-color: rgb(17, 17, 17); */
+    background-color: rgb(0, 0, 0);
+
+    height: 100vh;
+}
+
+.sidebar-custom-top {
+    display: grid;
+    /* grid-template-rows: repeat(auto-fit, 100px); */
+    position: absolute;
+    row-gap: 10px;
+   
+}
+.sidebar-custom-bottom {
+    bottom: 0;
+    position: absolute;
+    display: grid;
+    row-gap: 10px;
+    /* grid-template-rows: repeat(auto-fit, 100px); */
+}
+
+
+.glow {
+    height: 90%;
+    position: absolute;
+    top: 10%;
+    width: 90%;
+    left: 10%;
+}
+
+.sidebar-entry {
+    position: relative;
+    transition: .5s;
+}
+
+.sidebar-entry:hover{
+    background-color: lightgray;
+}
+
+.hamburger-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    display: none;
+}
+
 @media (min-width: 576px) {
-    .main {
-        padding-top: 70px;
+    .hamburger-menu {
+        display: none;
     }
 }
 @media (max-width: 575px) {
-    .main {
-        /* This needs to be changed when more tabs are added. huge pain */
-        padding-top: 140px;
+    .hamburger-menu {
+        display: block;
+    }
+    .sidebar-custom {
+        left: -70px;
     }
 }
 

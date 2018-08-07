@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="/static/css/oldStyles/homePageStyleOld.css">
+<script src="/static/js/homePage.js"></script>
+{% if inital_page is defined %}
+    {% extends "templateOld.html" %}
+    
+{% endif %}
+{% block bodyblock %}
+
+    <div class="parallax-img" style="background-image: url('/static/images/img3.jpg'); height: 100vh;">
+        <!-- <img src="/static/images/img1.jpeg" alt=""> -->
+        <div class="main-text">
+            Hello, <br>
+            I am Arek Fielding. <br>
+            Feel free to scroll down a look around this site to find out more about me.
+        </div>
+    </div>
+
+    <div class="text-bar-style header-custom-3" id="tb1">
+        Hello. I see you are scrolling down. Hopefully I have your attention.
+    </div>
+
+    <div class="parallax-img" style="background-image: url('/static/images/img2.jpg'); height: 500px;">
+    </div>
+
+    <div class="text-bar-style header-custom-3" id="tb2">
+        This is a website all about me. This is just about all I got for my home page. Please visit my other pages some more detail.
+    </div>
+
+    <div class="parallax-img" style="background-image: url('/static/images/img4.jpg'); height: 100%;">
+    </div>
+{% endblock %}
