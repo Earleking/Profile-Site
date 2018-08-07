@@ -24,7 +24,7 @@
             </script>
         {% endif %}
     {% endwith %}
-    <div class="sidebar-custom">
+    <div class="sidebar-custom" id="navbar">
         <div class="sidebar-custom-top">
             <div class="sidebar-entry">
                 <a class="nav-link nav-link-custom" href="/" id="test"><img class="nav-image" src="/static/images/home-icon.png"></a>
@@ -47,8 +47,8 @@
     </div>
     
     <!-- Open menu icon here. Will only show if narrow screen -->
-    <div class="hamburger-menu">
-        <a><img class="nav-image" src="/static/images/drawer.png"></a>
+    <div class="hamburger-menu" onclick="toggleNavbar()" id="hamburger-button">
+        <img class="nav-image" src="/static/images/drawer.png">
     </div>
 
 
