@@ -12,10 +12,57 @@
     
 }
 
+.intro-title {
+    color: #3BE03E;
+}
+
 .history-section {
     color: white;
     display: grid;
     grid-template-rows: auto auto auto;
     row-gap: 30px;
     padding: 0 10%;
+}
+
+.skills-container {
+    color: white;
+    padding: 10px 10vw;
+    display: grid;
+    grid-template-areas: 'tech general';
+    grid-template-columns: 50% 50%;
+}
+
+.technical-container {
+    grid-area: tech;
+    padding-right: 10px;
+}
+
+.other-container {
+    grid-area: general;
+    padding-left: 10px;
+}
+
+.custom-list-1 {
+    list-style-type: none;
+    padding: 0;
+    padding-left: 2.5vw;
+}
+
+.custom-list-2 {
+    list-style-type: square;
+    padding-left: 4vw;
+}
+
+.section-title {
+    color: #3BE03E;
+    text-align: center;
+    padding: 20px 10%;
+    font-weight: bold;
+}
+
+@media (max-width: 750px) {
+    .skills-container {
+        grid-template-areas: "tech" "general";
+        grid-template-columns: auto auto;
+    }
 }
