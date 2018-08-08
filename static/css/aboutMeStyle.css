@@ -60,6 +60,12 @@
     font-weight: bold;
 }
 
+.center-text {
+    /* margin: auto; */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
 @media (max-width: 750px) {
     .skills-container {
         grid-template-areas: "tech" "general";

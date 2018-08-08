@@ -14,12 +14,17 @@
 }
 
 .project {
-    height: 500px;
+    height: 300px;
     /* width: 100px; */
     background-color: gray;
     margin: 1vw;
     position: relative;
     transition: .5s;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
 }
 
 .project:hover {
@@ -37,33 +42,53 @@
     width: 100%;
     background: inherit;
     transition: .5s;
-    filter: blur(5px);  
+    filter: blur(3px);  
 }
 
 .project-1 {
     grid-area: a;
-    background: url("/static/images/laptop.jpg");
-    
+    background: url("/static/images/heimerbanner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
 }
 .project-2 {
     grid-area: b;
-    background: url("/static/images/bot.png");
+    background: url("/static/images/discord.svg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #dfdada;
+
 }
 .project-3 {
     grid-area: c;
-    background: url("/static/images/img2.jpg");
+    background: url("/static/images/vilemaw.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .project-4 {
     grid-area: d;
-    background: url("/static/images/img3.jpg");
+    background: url("/static/images/blankprofile.jpg");
+    background-size: cover;
+    background-position: center;
+
 }
 .project-5 {
     grid-area: e;
-    background: url("/static/images/img4.jpg");
+    background: url("/static/images/airport.jpg");
+    background-size: cover;
+
+    background-repeat: no-repeat;
 }
 .project-6 {
     grid-area: f;
-    background: url("/static/images/img5.jpg"); 
+    background: url("/static/images/futuretech.png"); 
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 
 .project-title {
