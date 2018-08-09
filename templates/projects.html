@@ -9,41 +9,218 @@
         Personal Projects
     </div>
     <div class="project-grid">
-        <div class="project-1 project">
+        <div class="project-1 project" onclick="fadeIn(1)">
             <div class="project-glass"></div>
-            <div class="project-title header-custom-2">
+            <div class="project-card-title header-custom-2">
                 Riot Game's API Challenge
             </div>
         </div>
         <div class="project-2 project">
             <div class="project-glass"></div>
-            <div class="project-title header-custom-2">
+            <div class="project-card-title header-custom-2">
                 Earle-Bot
             </div>
         </div>
         <div class="project-3 project">
             <div class="project-glass"></div>
-            <div class="project-title header-custom-2">
+            <div class="project-card-title header-custom-2">
                 Treeline.GG
             </div>
         </div>
         <div class="project-4 project">
             <div class="project-glass"></div>
-            <div class="project-title header-custom-2">
+            <div class="project-card-title header-custom-2">
                 Profile Site
             </div>
         </div>
         <div class="project-5 project">
             <div class="project-glass"></div>
-            <div class="project-title header-custom-2">
+            <div class="project-card-title header-custom-2">
                 Flight-Oracle
             </div>
         </div>
-        <div class="project-6 project">
+        <div class="project-6 project" onclick="fadeIn(6)">
             <div class="project-glass"></div>
-            <div class="project-title header-custom-2">
+            <div class="project-card-title header-custom-2">
                 My Next Project
             </div>
         </div>
     </div>
+    <!-- Projects overlay section -->
+    <div class="project-overlay" id="project-1">
+        <div class="close-button" onclick="fadeOut()">
+            <!-- click me to close -->
+        </div>
+        <div class="project-title header-custom-2">
+            Riot Games' API Challenge
+        </div>
+        <div class="project-tech-title text-custom-1">
+            Technologies Used
+        </div>
+        <div class="project-tech-list text-custom-3">
+            <div>NodeJS</div>
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>Javascript</div>
+            <div>MySQL</div>
+            <div>Heroku</div>
+        </div>
+        <div class="project-description-title text-custom-1">
+            Description
+        </div>
+        <div class="project-description text-custom-4">
+                This project was done at the end of 2017 for the Riot Games API Challenge. The challenge was to create
+                a tool that would help introduce new players to some of the newer features in the game using Riot Games'
+                API. Me and my partner created a two-part website. The first part was to analyze top players games and how
+                they used these new features. We then used this data to help newer players find more optimal uses of these
+                features. The other part was a more in-dept teaching section where we detailed what these new features do
+                and the strategy behind when and why they are good. My group finished second in our category.
+        </div>
+    </div>
+    <!-- <div class="project-overlay" id="project-2">
+        <div class="close-button" onclick="fadeOut()">
+            click me to close
+        </div>
+        <div class="project-title header-custom-2">
+            Treeline.GG
+        </div>
+        <div class="project-tech-title text-custom-1">
+            Technologies Used
+        </div>
+        <div class="project-tech-list text-custom-3">
+            <div>Python</div>
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>Javascript</div>
+            <div>SQLite</div>
+            <div>Django</div>
+        </div>
+        <div class="project-description-title text-custom-1">
+            Description
+        </div>
+        <div class="project-description text-custom-3">
+            This website is still an on-going project. This project is a statistics site that analyizes game stats from 
+            a specific game mode in League of Legends called Twisted Treeline. Hence the name TreelineGG. We scrape the 
+            data from Riot's API and store the relavent data in our own database. Then every once in a while our analysis
+            engine examines the data and detemines best practices. Both the raw data and the analyzied data will be viewable
+            on the website eventually.
+        </div>
+    </div>
+    <div class="project-overlay" id="project-3">
+        <div class="close-button" onclick="fadeOut()">
+            click me to close
+        </div>
+        <div class="project-title header-custom-2">
+            <a href="https://github.com/Earleking/Earle-Bot">Earle-Bot</a>
+        </div>
+        <div class="project-tech-title text-custom-1">
+            Technologies Used
+        </div>
+        <div class="project-tech-list text-custom-3">
+            <div>NodeJS</div>
+            <div>DiscordJS</div>
+        </div>
+        <div class="project-description-title text-custom-1">
+            Description
+        </div>
+        <div class="project-description text-custom-3">
+            This project is a bot for a popular social program (Discord). It reads the text messages that are sent in the chat
+            and if they are sent in a specific format, in this case preceded by a slash(/), then they would be
+            interpreted as a command. Using this any user can feed commands to my bot and have it do various tasks.
+            Some of these tasks include playing music, searching imgur and reddit, as well as rolling a dice amoung
+            other things. This was an earlier project of mine to help me get more familer with Node.js and has since
+            served it's purpose and is no longer continued. If I were to want to continue this, I would likely restart
+            from scratch because since writing this program I have learned alot about better coding practices and
+            in particular better program architecture.
+        </div>
+    </div>
+    <div class="project-overlay" id="project-4">
+        <div class="close-button" onclick="fadeOut()">
+            click me to close
+        </div>
+        <div class="project-title header-custom-2">
+            <a href="https://github.com/Earleking/Profile-Site">Profile Site</a>
+        </div>
+        <div class="project-tech-title text-custom-1">
+            Technologies Used
+        </div>
+        <div class="project-tech-list text-custom-3">
+            <div>Python</div>
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>Javascript</div>
+            <div>Flask</div>
+        </div>
+        <div class="project-description-title text-custom-1">
+            Description
+        </div>
+        <div class="project-description text-custom-3">
+            Hey look! This project is this very site. I made this site hoping to impresses someone who might be
+            looking at this site with my web skills. Hopefully I succeceded, maybe not. If I did it would be great
+            if you could let me know. Similarly if my website falls flat I would be appreciative if you let me
+            know where exactly I went wrong. My design sense isn't the best and I am always learning so if you
+            could help me I would love that.
+        </div>
+    </div>
+    <div class="project-overlay" id="project-5">
+        <div class="close-button" onclick="fadeOut()">
+            click me to close
+        </div>
+        <div class="project-title header-custom-2">
+            <a href="https://github.com/Earleking/Flight-Oracle">Flight Oracle</a>
+        </div>
+        <div class="project-tech-title text-custom-1">
+            Technologies Used
+        </div>
+        <div class="project-tech-list text-custom-3">
+            <div>NodeJS</div>
+            <div>Python</div>
+            <div>TensorFlow</div>
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>Javascript</div>
+            <div>Excel</div>
+        </div>
+        <div class="project-description-title text-custom-1">
+            Description
+        </div>
+        <div class="project-description text-custom-3">
+            This website was created in a group of 4 for the Hack Western Hackathon. This project uses machine learning
+            along with The Weather Network's API to predict the chances of a flight being delayed on a given day. To
+            create this historical flight data was gathered from the past years and then filtered before being fed into
+            a basic FeedFoward neural network. Due to short time span only outbound flights were considered with no
+            consideration towards the weather at the destination. Also, only USA airports are selectable. Due to The
+            Weather Network's API only being available during the hackaton this site is now retired.
+        </div>
+    </div>
+    <div class="project-overlay" id="project-6">
+        <div class="close-button" onclick="fadeOut()">
+            click me to close
+        </div>
+        <div class="project-title header-custom-2">
+            <a href="https://github.com/Earleking">My Next Project</a>
+        </div>
+        <div class="project-tech-title text-custom-1">
+            Technologies Used
+        </div>
+        <div class="project-tech-list text-custom-3">
+            <div>NodeJS</div>
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>Javascript</div>
+            <div>MySQL</div>
+            <div>Heroku</div>
+        </div>
+        <div class="project-description-title text-custom-1">
+            Description
+        </div>
+        <div class="project-description text-custom-3">
+            This spot is here for my next project. At the moment I am not sure what it will be. Might be some
+            Artifical intellegence game, might not. I was thinking of starting simple and maybe trying to teach
+            an AI to play tic-tac-toe. I also want to improve my proficiency in mobile app development. Sometime
+            soon I am likely to create an application using either React Native or PhoneGap. Anyway, whatever it
+            is I will continue learning new concepts and creating things I enjoy. 
+        </div>
+    </div> -->
+    <script src="/static/js/projects.js"></script>
 {% endblock %}

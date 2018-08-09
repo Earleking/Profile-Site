@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="/static/css/aboutMe2Style.css">
+
+{% if inital_page is defined %}
+    {% extends "template.html" %}
+{% endif %}
+
+{% block bodyblock %}
+<div class="main-section">
+    <div class="about-section">
+
+    </div>
+    <div class="drawer-section">
+        <ul class="accordion">
+            <li class="accordion-card">
+                <div class="card-head">
+                    Card 1
+                </div>
+                <div class="card-body">
+                    Card Body
+                </div>
+            </li
+            ><li class="accordion-card">
+                <div class="card-head">
+                    Card 2
+                </div>
+                <div class="card-body">
+                    Card Body
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+{% endblock %}
