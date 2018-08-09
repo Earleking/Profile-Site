@@ -1,41 +1,122 @@
+.main-section {
+    display: grid;
+    grid-template-areas:'about draw';
+    grid-template-columns: auto 800px;
+    min-height: 80vh;
+    padding: 0 10vw;
+    position: relative;
+    top: 50vh;
+    transform: translateY(-50%);
+}
+
 .drawer-section {
-    height: 200px;
-    width: 500px;
-    padding-left: 100px;
+    height: 100%;
+    grid-area: draw;
 }
 
 .accordion {
     list-style-type: none;
     display: block;
     position: relative;
+    float: right;
+    color: white;
 }
 
 .accordion-card {
     display: inline-block;
-    background-color: wheat;
+    background-color: #303030;
     overflow: hidden;
-    width: 30px;
+    width: 40px;
     height: 100%;
     margin: 0;
     padding: 0;
     transition: 1s;
     position: relative;
+    border: 1px #3BE03E solid;
 }
-.accordion-card:hover {
-    width: 200px;
+.expand-style {
+    /* width: 35vw; */
+    width: 600px;
 }
 
 .card-head {
     display: inline;
-    float: right;
-    /* height: 100%; */
+    float: left;
     writing-mode: vertical-lr;
     text-orientation: upright;
+    /* text-align: end; */
+    height: 80vh;
+    /* text-align: center; */
+    /* left: 50px; */
 }
 
-.card-body {
+.card-head:hover {
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+.card-custom {
     display: inline;
-    float: right;
+    float: left;
     position: absolute;
-    width: 200px;
+    /* width: 200px; */
+    height: 100%;
+    /* right: 0px; */
+    /* transform: translateX(-100%); */
+}
+
+.about-section {
+    grid-area: about;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.intro-title {
+    color: #3BE03E;
+}
+
+.intro-section {
+    position: relative;
+    top: 35vh;
+    transform: translateY(-50%);
+}
+
+@media(max-width:1400px) {
+    .main-section {
+        grid-template-areas: 'about' 'draw';
+        grid-template-columns: auto;
+        grid-template-rows: 90vh auto;
+        top: 5vh;
+        transform: none;
+    }
+    
+    .accordion-card {
+        width: 80vw;
+        height: 25px;
+    }
+    
+    .accordion {
+        padding: 0;
+    }
+    .card-head {
+        writing-mode: horizontal-tb;
+        height: auto;
+        float: none;  
+        display: block;
+        text-align: center;  
+    }
+    .card-custom {
+        width: 100%;
+        left: 0;
+        padding-top: 20px;
+        height: auto;
+    }
+    .expand-style {
+        /* width: 35vw; */
+        /* width: calc(80vw - 170px); */
+        height: 500px;
+        width: 80vw;
+    }
 }
