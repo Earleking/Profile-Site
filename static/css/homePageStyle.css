@@ -13,6 +13,10 @@
     text-align: center;
 }
 
+.name-container {
+    color: #29be2c;
+}
+
 .redirect-button {
     width: 200px;
     border: 1px #3BE03E solid;

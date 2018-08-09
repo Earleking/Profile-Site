@@ -39,7 +39,7 @@
 
 .other-container {
     grid-area: general;
-    padding-left: 10px;
+    /* padding-left: 10px; */
 }
 
 .custom-list-1 {
