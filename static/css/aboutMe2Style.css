@@ -24,9 +24,9 @@
 
 .accordion-card {
     display: inline-block;
-    background-color: #303030;
+    background-color: #292929;
     overflow: hidden;
-    width: 40px;
+    width: 45px;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -46,6 +46,8 @@
     text-orientation: upright;
     /* text-align: end; */
     height: 80vh;
+    border: 1px #3BE03E solid;
+
     /* text-align: center; */
     /* left: 50px; */
 }
