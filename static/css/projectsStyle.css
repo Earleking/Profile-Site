@@ -105,26 +105,40 @@
 .project-overlay {
     position: fixed;
     width: 80%;
+    height: 80vh;
     left: 10%;
     /* top: 100vh; */
-    top: 5vh;
+    /* top: 5vh; */
     min-height: 100px;
     background-color: rgb(37, 36, 36);
     max-height: 90vh;
     overflow: auto;
+    overflow-x: hidden;
     color: white;
-    grid-template-areas: 'title title title' 't-Title d-Title d-Title' 'techs descrip descript';
+    grid-template-areas: 'close close' 'title title' 't-Title d-Title' 'techs descrip';
     display: grid;
-    padding: 2.5vw;
+    padding: 0 2.5vw 2.5vw 2.5vw;
+    transition: .75s;
+}
+
+.show-overlay {
+    top: 5vh;
+}
+
+.hide-overlay {
+    top: 100vh;
 }
 
 .close-button {
-    position: relative;
-    width: 100%;
+    position: fixed;
+    grid-area: close;
+    /* width: 100%; */
+    width: 78.5vw;
     height: 20px;
     background: url("/static/images/down-arrow.png");
     background-size: auto 100%;
     background-repeat: round;
+    background-color: rgb(37, 36, 36);
 }
 
 .close-button:hover {
