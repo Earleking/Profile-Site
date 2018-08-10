@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="/static/css/projects2Style.css">
+
+{% if inital_page is defined %}
+    {% extends "template.html" %}
+{% endif %}
+
+{% block bodyblock %}
+<div class="main-section">
+    <div class="title-section header-custom-2">
+        Projects
+    </div>
+    <div class="slideshow-section">
+        <div class="slideshow-img far-left-image" id="img-1">
+            <div class="slideshow-title header-custom-2">
+                Discord Bot
+            </div>
+        </div>
+        <div class="slideshow-img left-image" id="img-2">
+            <div class="slideshow-title header-custom-2">
+                Treeline.GG
+            </div>
+        </div>
+        <div class="slideshow-img main-image" id="img-3">
+            <div class="slideshow-title text-custom-2">
+                Riot Games API Challenge
+            </div>
+        </div>
+        <div class="slideshow-img right-image" id="img-4">
+            4
+        </div>
+        
+        <div class="slideshow-img far-right-image" id="img-5">
+            5
+        </div>
+        <!-- LMAO THIS IS SO EASY TO EXTEND -->
+        <!-- <div class="slideshow-img hidden-image" id="img-6">
+            6
+        </div>
+        <div class="slideshow-img hidden-image" id="img-7">
+            7
+        </div> -->
+        <div class="rotate-button" onclick="rotateLeft()">
+            Left
+        </div>
+        <div class="rotate-button" onclick="rotateRight()">
+            Right
+        </div>
+    </div>
+    <div class="details-section">
+
+    </div>
+</div>
+<script src="/static/js/projects2.js"></script>
+{% endblock %}

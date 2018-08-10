@@ -35,8 +35,8 @@ def contact():
 @main.route('projects')
 def projects():
     if request.method == 'POST':
-        return render_template('projects.html', title='Projects')
-    return render_template('projects.html', title='Projects', inital_page=True)
+        return render_template('projects2.html', title='Projects')
+    return render_template('projects2.html', title='Projects', inital_page=True)
 
 # @main.route('projects2')
 # def projects2():

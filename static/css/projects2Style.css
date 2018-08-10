@@ -1,0 +1,110 @@
+html {
+    --width: 300px;
+    --height: 200px;
+}
+
+.title-section {
+    color: green;
+    text-align: center;
+    min-height: 10vh;
+}
+
+.slideshow-section {
+    min-height: 250px;
+    height: 40vh;
+    background-color: #2f2f2f;
+    perspective: 100px;
+}
+
+.slideshow-title {
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align: center;
+    position: relative;
+}
+
+.details-section {
+    display: grid;
+}
+
+.rotate-button {
+    height: 50px;
+    width: 50px;
+    background-color: lightblue;
+    position: relative;
+    left: 100px;
+}
+
+.rotate-button:hover {
+    cursor: pointer;
+}
+
+.slideshow-img {
+    background: url('/static/images/bot.png');
+    height: var(--height);
+    width: var(--width);
+    /* left: 200px; */
+    top: 30px;
+    position: absolute;
+    transform: translateX(calc(50vw - 50%));
+    transform-style: preserve-3d;
+    transition: .7s;
+}
+
+.main-image {
+    transform: translateX(calc(50vw - 50%));
+}
+
+.right-image {
+    transform: translateX(calc(50vw - 50%)) translateX(120%) translateZ(calc(var(--width) / -20)) rotateY(5deg);
+}
+.left-image {
+    /* transform: translateX(-200px) translateZ(-50px) rotateY(-30deg) ; */
+    transform: translateX(calc(50vw - 50%)) translateX(-120%) translateZ(calc(var(--width) / -20)) rotateY(-5deg);
+}
+
+.far-right-image {
+    transform: translateX(calc(50vw - 50%)) translateX(235%) translateZ(-115px) rotateY(33deg);
+    z-index: -1;
+}
+
+.far-left-image {
+    transform: translateX(calc(50vw - 50%)) translateX(-235%) translateZ(-115px) rotateY(-33deg);
+    z-index: -1;
+}
+
+.hidden-image {
+    /* display: none; */
+    transform: translateX(calc(50vw - 50%)) translateZ(-100px);
+    z-index: -1;
+}
+
+/* images */
+#img-1 {
+    background: url('/static/images/bot.png');
+}
+#img-2 {
+    background: url('/static/images/vilemaw.jpg');
+    background-size: auto 100%;
+}
+#img-3 {
+    background: url('/static/images/heimerbanner.jpg');
+    background-size: auto 100%;
+}
+
+
+/* image titels */
+#img-1 .slideshow-title {
+    width: 46%;
+    top: 35px;
+}
+
+#img-2 .slideshow-title {
+    top: 75px;
+}
+
+#img-3 .slideshow-title {
+    width: 40%;
+    top: 50%;
+    transform: translateY(-50%);
+}
