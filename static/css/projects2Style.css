@@ -4,7 +4,7 @@ html {
 }
 
 .title-section {
-    color: green;
+    color: #3BE03E;
     text-align: center;
     min-height: 10vh;
 }
@@ -21,10 +21,6 @@ html {
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     text-align: center;
     position: relative;
-}
-
-.details-section {
-    display: grid;
 }
 
 .rotate-button {
@@ -53,6 +49,7 @@ html {
 
 .main-image {
     transform: translateX(calc(50vw - 50%));
+    z-index: 2  ;
 }
 
 .right-image {
@@ -79,32 +76,140 @@ html {
     z-index: -1;
 }
 
+
+/* Details stuff */
+.details-section {
+    display: grid;
+    grid-template-areas: 'title descrip' 'techs descrip';
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100px auto;
+    color: white;
+    padding-left: 10vw;
+    padding-top: 30px;
+    width: 90vw;
+}
+.details-title {
+    grid-area: title;
+    position: relative;
+    overflow: hidden;
+}
+.details-title-value {
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    /* position: relative; */
+    padding: 20px;
+    color: #3BE03E;
+    position: absolute;
+    display: none;
+    animation: shiftIn 1s;
+    width: 100%;
+}
+
+.details-tech {
+    grid-area: techs;
+    position: relative;
+    overflow: hidden;
+}
+.details-tech-label {
+    text-align: center;
+}
+
+.details-tech-value {
+    position: relative;
+    animation: shiftIn 1s;
+    /* opacity: 0; */
+    display: none;
+}
+.tech-list {
+    /* width: 100%; */
+    grid-template-columns: repeat(auto-fit, 100px);
+    justify-content: space-evenly;
+    display: grid;
+    padding: 0;
+
+}
+.tech-item {
+    list-style: none;
+    text-align: center;
+    animation: shiftIn 1s;
+
+}
+.details-text {
+    grid-area: descrip;
+    position: relative;
+    overflow: hidden;
+}
+
+.details-text-value {
+    animation: shiftIn 1s;
+    position: relative;
+    display: none;
+}
+
+.active-item {
+    display: block;
+    opacity: 1;
+    z-index: 2;
+}
+
 /* images */
 #img-1 {
-    background: url('/static/images/bot.png');
-}
-#img-2 {
     background: url('/static/images/vilemaw.jpg');
     background-size: auto 100%;
+}
+#img-2 {
+    background: url('/static/images/bot.png');
 }
 #img-3 {
     background: url('/static/images/heimerbanner.jpg');
     background-size: auto 100%;
 }
-
+#img-4 {
+    background-color: black;
+    background: black;
+}
+#img-5 {
+    background: url('/static/images/airplane.svg');
+    background-size: auto 100%;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 /* image titels */
 #img-1 .slideshow-title {
+    top: 75px;
+}
+#img-2 .slideshow-title {
     width: 46%;
     top: 35px;
-}
-
-#img-2 .slideshow-title {
-    top: 75px;
 }
 
 #img-3 .slideshow-title {
     width: 40%;
     top: 50%;
     transform: translateY(-50%);
+}
+
+#img-4 .slideshow-title {
+    top: 50%;
+    transform: translateY(-50%);
+    border: 3px #3BE03E solid;
+    padding: 5px;
+    width: 80%;
+    left: 10%;
+}
+
+/* keyframes */
+
+@keyframes shiftIn {
+    0% {
+        left: 100%;
+        /* width: 0; */
+    }
+    100% {
+        left: 0;
+        /* width: 100%; */
+    }
 }
