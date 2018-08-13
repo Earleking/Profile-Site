@@ -20,6 +20,7 @@ function rotateLeft() {
     for(i in imageList) {
         document.getElementById(imageList[i]).classList.add(classList[i]);
     }
+
 }
 
 function rotateRight() {
@@ -42,4 +43,12 @@ function rotateRight() {
     }
 }
 
-// rotateRight();
+$('.slideshow-img').click(function(event) {
+    console.log(this.classList[1]);
+    if((this.classList[1] == "left-image")) {
+        rotateLeft();
+    }
+    if((this.classList[1] == "right-image")) {
+        rotateRight();
+    }
+});
