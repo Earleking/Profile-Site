@@ -1,0 +1,66 @@
+.main-block {
+    padding-left: 10vw;
+    color: white;
+    display: grid;
+    grid-template-areas: 'title title' 'a b';
+    grid-template-columns: 50% 50%;
+    width: 90vw;
+}
+
+.contact-text-input {
+    width: 100%;
+}
+
+.contact-table {
+    width: 100%;
+    overflow: hidden;
+    color: white;
+    position: relative;
+    display: block;
+}
+
+.details-block {
+    overflow: hidden;
+    position: relative;
+    grid-area: a;
+}
+
+.quick-block {
+    grid-area: b;
+}
+
+.title-block {
+    grid-area: title;
+    text-align: center;
+    color: #3BE03E;
+}
+
+.form-format {
+    display: grid;
+    column-gap: 15px;
+    grid-template-areas: 'a b' 'c c' 'd d';
+}
+
+.form-button {
+    grid-area: d;
+}
+
+.text-section {
+    grid-area: c;
+}
+
+.email-section {
+    grid-area: b;
+}
+
+.contact-input {
+    width: 100%;
+}
+
+@media(max-width: 500px) {
+    .main-block {
+        grid-template-areas: 'title' 'a' 'b';
+        grid-template-columns: 100%;
+        row-gap: 20px;
+    }
+}
