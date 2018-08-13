@@ -29,8 +29,8 @@ def contact():
     Contact Page
     '''
     if request.method == 'POST':
-        return render_template('contactMe.html', title='Contact Me')
-    return render_template('contactMe.html', title='Contact Me', inital_page=True)
+        return render_template('contactMe2.html', title='Contact Me')
+    return render_template('contactMe2.html', title='Contact Me', inital_page=True)
 
 @main.route('projects')
 def projects():
