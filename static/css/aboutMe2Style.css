@@ -85,6 +85,13 @@
     top: 35vh;
     transform: translateY(-50%);
 }
+.custom-list-2 {
+    padding-left: 2vw;
+}
+.skills-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
 
 @media(max-width:1400px) {
     .main-section {
