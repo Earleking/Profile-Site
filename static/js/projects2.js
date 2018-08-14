@@ -46,7 +46,6 @@ function rotateRight() {
 
 // Old center is 2 for shiftLeft and 4 for shiftRight
 function updateText(oldCenter) {
-    console.log("title-" + idList[oldCenter]);
     // Remove active from the old text
     document.getElementById("title-" + idList[oldCenter]).classList.remove('active-item');
     document.getElementById("tech-" + idList[oldCenter]).classList.remove('active-item');
@@ -60,10 +59,43 @@ function updateText(oldCenter) {
 
 
 $('.slideshow-img').click(function(event) {
+    
+});
+
+// drag movement stuff
+var clickDownLoc = -1; //x only. y does't matter
+$('.slideshow-img').mousedown(function(event) {
+    if(this.classList[1] == 'main-image') {
+        // console.log(event.pageX);
+        clickDownLoc = event.pageX;
+    }
+    else {
+        clickDownLoc = -1;
+    }
+
     if((this.classList[1] == "left-image")) {
         rotateLeft();
     }
     if((this.classList[1] == "right-image")) {
         rotateRight();
+    }
+})
+
+$('.slideshow-section').mouseup(function(event) {
+    if(clickDownLoc == -1) {
+        return;
+    }
+    var delta = event.pageX - clickDownLoc;
+    if(Math.abs(delta) > 30) {
+        if(delta > 0) {
+            rotateLeft();
+            clickDownLoc = -1;
+            return;
+        }
+        else {
+            rotateRight();
+            clickDownLoc = -1;
+            return;
+        }
     }
 });
