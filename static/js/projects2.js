@@ -58,10 +58,6 @@ function updateText(oldCenter) {
 } 
 
 
-$('.slideshow-img').click(function(event) {
-    
-});
-
 // drag movement stuff
 var clickDownLoc = -1; //x only. y does't matter
 $('.slideshow-img').mousedown(function(event) {
@@ -99,3 +95,48 @@ $('.slideshow-section').mouseup(function(event) {
         }
     }
 });
+
+//drag mobile implentation
+var lastEvent;
+$('.slideshow-img').on('touchstart', function(event) {
+    if(this.classList[1] == 'main-image') {
+        // console.log(event.pageX);
+        clickDownLoc = event.originalEvent.touches[0].pageX;
+    }
+    else {
+        clickDownLoc = -1;
+    }
+
+    if((this.classList[1] == "left-image")) {
+        rotateLeft();
+    }
+    if((this.classList[1] == "right-image")) {
+        rotateRight();
+    }
+    lastEvent = event;
+});
+
+$('.slideshow-section').on('touchmove', function(event) {
+    lastEvent = event;
+});
+
+$('.slideshow-section').on('touchend', function(event) {
+    console.log(lastEvent);
+    if(clickDownLoc == -1) {
+        return;
+    }
+    var delta = lastEvent.originalEvent.touches[0].pageX - clickDownLoc;
+    if(Math.abs(delta) > 70) {
+        if(delta > 0) {
+            rotateLeft();
+            clickDownLoc = -1;
+            return;
+        }
+        else {
+            rotateRight();
+            clickDownLoc = -1;
+            return;
+        }
+    }
+});
+
