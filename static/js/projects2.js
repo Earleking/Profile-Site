@@ -86,7 +86,7 @@ $('.slideshow-section').mouseup(function(event) {
         return;
     }
     var delta = event.pageX - clickDownLoc;
-    if(Math.abs(delta) > 30) {
+    if(Math.abs(delta) > 70) {
         if(delta > 0) {
             rotateLeft();
             clickDownLoc = -1;
