@@ -94,6 +94,17 @@ html {
     position: relative;
     overflow: hidden;
 }
+
+.details-title a:hover {
+    color: rgb(22, 114, 23);
+    text-decoration: none;
+}
+
+.details-title a {
+    color: #3BE03E;
+    text-decoration: none;
+}
+
 .details-title-value {
     text-align: center;
     top: 50%;
