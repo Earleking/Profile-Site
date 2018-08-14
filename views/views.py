@@ -51,12 +51,13 @@ def send_email():
     '''
     to_email = Email('arek.fielding@gmail.com')
     f_email = 'profile-site@afielding.com'
-    if request.form['email']:
-        f_email = request.form['email']
+    # if request.form['email']:
+    #     f_email = request.form['email']
     from_email = Email(f_email)
-    subject = "Someone contacted you"
+    subject = "Someone contacted you: " + str(request.form['email'])
     content = Content('text/plain', str(request.form['text']) + ' \n \n ' + str(request.form['name']))
     mail = Mail(from_email, subject, to_email, content)
     response = sg.client.mail.send.post(request_body=mail.get())
+    print(response.status_code)
     flash("Email was sent")
     return redirect(url_for('view.contact'))
