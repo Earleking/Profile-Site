@@ -1,10 +1,11 @@
 .main-block {
-    padding-left: 10vw;
+    padding-left: 20vw;
     color: white;
     display: grid;
     grid-template-areas: 'title title' 'a b';
     grid-template-columns: 50% 50%;
-    width: 90vw;
+    width: 80vw;
+    column-gap: 30px;
 }
 
 .contact-text-input {
@@ -62,5 +63,7 @@
         grid-template-areas: 'title' 'a' 'b';
         grid-template-columns: 100%;
         row-gap: 20px;
+        width: 90vw;
+        padding-left: 10vw;
     }
 }
