@@ -1,0 +1,84 @@
+<link rel="stylesheet" href="/static/css/aboutMe3Style.css">
+<link rel="stylesheet" href="/static/css/cubeStyle.css">
+{% if inital_page is defined %}
+    {% extends "template.html" %}
+{% endif %}
+
+{% block bodyblock %}
+<div class="main-container">
+    <div class="intro-section">
+
+    </div>
+    <div class="cube-scene">
+        <div class="cube cube-show-front" id="cube">
+            <!-- Cube faces -->
+            <div class="cube-face cube-face-left highschool-face" id="work-left-face">
+                <div class="c-title header-custom-3">High School</div>
+                <div class="c-image" style="background-image: url(/static/images/ggmsslogo.png)"></div>
+                <div class="c-text text-custom-3">
+                    For high school I went to Gordon Graydon Memorial Secondary School. I attended this school in
+                    the International Business and Technology (IBT) program and graduated on the Honor Roll. At this school
+                    is where I first picked up programming, in my Grade 11 computer science class. At the time I just learned
+                    Visual Basic .net but have since also learned a variety of other programming languages.
+                </div>
+            </div>
+            <div class="cube-face cube-face-right work-face" id="work-right-face">
+                    <div class="c-title header-custom-3">Work - MDA</div>
+                    <!-- <div class="c-image"></div> -->
+                    <div class="c-text text-custom-3">
+                        <img src="/static/images/mdalogo.png" alt="" style="width: 40%; max-width: 425px;" align='right'>
+                        In the summers of 2017 and 2018 I took an internship at McDonald Detwiller and Associates.
+                        During my first summer I worked under the Missions group and helped with a few projects as
+                        well as did some scripting for excel. In 2018 I worked under the Software group and did work
+                        on interfacing programs as well as setting up a web-portal for one of MDA's programs. From this
+                        internship I was able to learn a lot about teamwork dynamics and workflow in an engineering 
+                        workplace as well as I got to apply many of the concepts I learned in school to real-world
+                        projects. 
+                    </div>
+            </div>
+
+            <div class="cube-face cube-face-front university-face" id="work-front-face">
+                <div class="c-title header-custom-3">University</div>
+                <!-- <div class="c-image" style="background-image: url(/static/images/icon.png); background-color: transparent;"></div> -->
+                <div class="c-text text-custom-3">
+                    <img src="/static/images/westernlogo.png" alt="" style="width: 30%; max-width: 250px; margin: 10px;" align="right">
+                    I am currently attending Western University. I am now in my third year of Software Engineering. Here
+                    I have learned a lot more about programming as well as many other skills such as teamwork, writing
+                    3-D CAD just to name a few. I also attended my first hackaton, Hack Western, here. This hackathon
+                    really inspired me and since then I have already attended two others.
+                </div>
+            </div>
+            <div class="cube-face cube-face-back" id="work-back-face">
+                    
+            </div>
+            <!-- <div class="cube-face cube-face-top">Top</div>
+            <div class="cube-face cube-face-bottom">Bottom</div> -->
+        </div>
+        <div class="cube-controller">
+            <div class="select-banner work-banner" onclick="toWork()">
+                <img class="pop-icon" src="/static/images/about-icon.png">
+                <div class="pop-text">
+                    MDA
+                </div>
+            </div>
+            <div class="select-banner uni-banner" onclick="toUni()">
+                <img class="pop-icon" src="/static/images/contact-icon.png">
+                <div class="pop-text">
+                    Western University
+                </div>
+            </div>
+            <div class="select-banner hs-banner" onclick="toHS()">
+                <img class="pop-icon" src="/static/images/github-icon.png">
+                <div class="pop-text">
+                    High School
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+<script src="/static/js/cube.js"></script>
+{% endblock %}

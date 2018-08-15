@@ -1,0 +1,39 @@
+.select-banner {
+    /* position: absolute; */
+    /* right: 0; */
+    top: 10vh;
+    /* text-align: right; */
+    color: white;
+    background-color: gray;
+    border-top-left-radius: 30px 50%;
+    border-bottom-left-radius: 30px 50%;
+    padding: 12px;
+    margin-bottom: 10px;
+    left: 158px;
+    position: relative;
+    transition: .5s;
+}
+
+.select-banner:hover {
+    left: 0;
+    cursor: pointer;
+}
+
+.cube-controller {
+    position: absolute;
+    /* width: 30vw; */
+    width: 225px;
+    top: 0;
+    /* left: 0; */
+    height: auto;
+    right: -10vw;
+}
+
+.pop-icon {
+    width: 4vw;
+    min-width: 50px;
+}
+
+.pop-text {
+    display: inline-block;
+}

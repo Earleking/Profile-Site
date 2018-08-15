@@ -1,4 +1,5 @@
 var sideListInNormal = ['front', 'left', 'right']
+var currentClass = 'front'
 function rotateRight() {
     // window.history.pushState('hello world', 'TitleTest', '/');
     var cube = document.getElementById('cube');
@@ -76,3 +77,62 @@ function rotateLeft() {
         }
     }
 }
+
+function toWork() {
+    var cube = document.getElementById('cube');
+    var newClass = 'cube-show-right';
+    var lastclass = cube.classList[cube.classList.length - 1];
+
+    cube.classList.remove(lastclass);
+    // Remove z-index class from current face
+    var face = document.getElementById('work-' + currentClass + "-face");
+    try {
+        face.classList.remove('to-front')
+    } catch (error) {
+        
+    }
+    // Re-add z-index class
+    face = document.getElementById('work-right-face');
+    face.classList.add('to-front');
+    cube.classList.add(newClass);
+    currentClass = 'right';
+}
+
+function toUni() {
+    var cube = document.getElementById('cube');
+    var newClass = 'cube-show-front';
+    var lastclass = cube.classList[cube.classList.length - 1];
+    cube.classList.remove(lastclass);
+    // Remove z-index class from current face
+    var face = document.getElementById('work-' + currentClass + "-face");
+    try {
+        face.classList.remove('to-front')
+    } catch (error) {
+        
+    }
+    // Re-add z-index class
+    face = document.getElementById('work-front-face');
+    face.classList.add('to-front');
+    cube.classList.add(newClass);
+    currentClass = 'front';
+}
+
+function toHS() {
+    var cube = document.getElementById('cube');
+    var newClass = 'cube-show-left';
+    var lastclass = cube.classList[cube.classList.length - 1];
+    cube.classList.remove(lastclass);
+    // Remove z-index class from current face
+    var face = document.getElementById('work-' + currentClass + "-face");
+    try {
+        face.classList.remove('to-front')
+    } catch (error) {
+        
+    }
+    // Re-add z-index class
+    face = document.getElementById('work-left-face');
+    face.classList.add('to-front');
+    cube.classList.add(newClass);
+    currentClass = 'left';
+}
+
