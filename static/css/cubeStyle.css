@@ -27,7 +27,7 @@
     position: absolute;
     width: var(--face-width);
     height: var(--face-height);
-    overflow: auto;
+    /* overflow: auto; */
     padding: 0 3%;
 }
 
