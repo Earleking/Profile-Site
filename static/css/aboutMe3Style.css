@@ -21,7 +21,7 @@
 }
 
 .cube-controller {
-    position: absolute;
+    position: fixed;
     /* width: 30vw; */
     width: 225px;
     top: 50%;
