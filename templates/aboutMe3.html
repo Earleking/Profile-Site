@@ -6,8 +6,17 @@
 
 {% block bodyblock %}
 <div class="main-container">
-    <div class="intro-section">
-
+    <div class="intro-container">
+        <div class="intro-section">
+            <div class="intro-title header-custom-2">
+                Who Am I?
+            </div>
+            <div class="intro-text text-custom-2">
+                I am currently in my 3rd year at the University of Western Ontario in London Ontario, Canada. There I 
+                study Software Engineering and am looking for an internship in a software field. Along with programming
+                I enjoy martial arts, video games, heist movies and playing with my cat. 
+            </div>
+        </div>
     </div>
     <div class="cube-scene">
         <div class="cube cube-show-front" id="cube">
@@ -16,6 +25,7 @@
                 <div class="c-title header-custom-3">High School</div>
                 <div class="c-image" style="background-image: url(/static/images/ggmsslogo.png)"></div>
                 <div class="c-text text-custom-3">
+                    <img src="/static/images/ggmsslogo.png" style="width: 25%; max-width: 400px;" align='left'>
                     For high school I went to Gordon Graydon Memorial Secondary School. I attended this school in
                     the International Business and Technology (IBT) program and graduated on the Honor Roll. At this school
                     is where I first picked up programming, in my Grade 11 computer science class. At the time I just learned
@@ -51,8 +61,8 @@
             <div class="cube-face cube-face-back" id="work-back-face">
                     
             </div>
-            <!-- <div class="cube-face cube-face-top">Top</div>
-            <div class="cube-face cube-face-bottom">Bottom</div> -->
+            <!-- <div class="cube-face cube-face-top">Top</div> -->
+            <!-- <div class="cube-face cube-face-bottom">Bottom</div> -->
         </div>
         <div class="cube-controller">
             <div class="select-banner work-banner" onclick="toWork()">
@@ -71,6 +81,12 @@
                 <img class="pop-icon" src="/static/images/github-icon.png">
                 <div class="pop-text">
                     High School
+                </div>
+            </div>
+            <div class="select-banner skills-banner" onclick="toSkills()">
+                <img class="pop-icon" src="/static/images/github-icon.png">
+                <div class="pop-text">
+                    Skills
                 </div>
             </div>
         </div>

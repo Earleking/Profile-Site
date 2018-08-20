@@ -9,7 +9,7 @@
     border-bottom-left-radius: 30px 50%;
     padding: 12px;
     margin-bottom: 10px;
-    left: 158px;
+    left: 142px;
     position: relative;
     transition: .5s;
 }
@@ -20,7 +20,7 @@
 }
 
 .cube-controller {
-    position: absolute;
+    position: fixed;
     /* width: 30vw; */
     width: 225px;
     top: 0;
@@ -36,4 +36,30 @@
 
 .pop-text {
     display: inline-block;
+}
+
+.intro-container {
+    min-height: 100vh;
+}
+
+.intro-section {
+    width: 70%;
+    text-align: center;
+    color: white;
+    left: 15%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.intro-title {
+    color: #3BE03E;
+}
+
+.main-container {
+    padding-bottom: 33vh;
+}
+
+.c-title {
+    text-align: center;
 }
