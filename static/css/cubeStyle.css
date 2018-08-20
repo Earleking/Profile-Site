@@ -41,7 +41,8 @@
     transform: rotateY(0deg) translateZ(calc(var(--face-width) / 2));
 }
 .cube-face-back {
-    background-color: rgba(39, 123, 196, 0.555);
+    background-color: rgba(47, 34, 5, 0.95);
+    color: white;
     -webkit-transform: rotateY(180deg) translateZ(calc(var(--face-width) / 2));
     -moz-transform: rotateY(180deg) translateZ(calc(var(--face-width) / 2));
     -ms-transform: rotateY(180deg) translateZ(calc(var(--face-width) / 2));

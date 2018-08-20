@@ -63,3 +63,11 @@
 .c-title {
     text-align: center;
 }
+.skills-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.custom-list-1 {
+    list-style: none;
+}
