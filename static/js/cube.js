@@ -1,4 +1,4 @@
-var sideListInNormal = ['front', 'left', 'right']
+var sideListInNormal = ['front', 'left', 'back', 'right']
 var currentClass = 'front'
 function rotateRight() {
     // window.history.pushState('hello world', 'TitleTest', '/');
@@ -68,7 +68,6 @@ function rotateLeft() {
             // Re-add z-index class
             face = document.getElementById('work-' + sideListInNormal[nextIndex] + "-face");
             face.classList.add('to-front');
-            console.log('work-' + sideListInNormal[nextIndex] + "-face");
 
             newClass = newClass + sideListInNormal[nextIndex];
             cube.classList.add(newClass);
@@ -157,19 +156,11 @@ function toSkills() {
 //drag mobile implentation
 var lastEvent;
 $('.cube-face').on('touchstart', function(event) {
-    if(this.classList[2] == 'to-front') {
-        // console.log(event.pageX);
+    if(this.classList[3] == 'to-front') {
         clickDownLoc = event.originalEvent.touches[0].pageX;
     }
     else {
         clickDownLoc = -1;
-    }
-
-    if((this.classList[1] == "left-image")) {
-        rotateLeft();
-    }
-    if((this.classList[1] == "right-image")) {
-        rotateRight();
     }
     lastEvent = event;
 });
@@ -179,7 +170,7 @@ $('.cube-face').on('touchmove', function(event) {
 });
 
 $('.cube-face').on('touchend', function(event) {
-    console.log(lastEvent);
+    // console.log(lastEvent);
     if(clickDownLoc == -1) {
         return;
     }
