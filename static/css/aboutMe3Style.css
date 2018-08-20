@@ -21,10 +21,11 @@
 }
 
 .cube-controller {
-    position: fixed;
+    position: absolute;
     /* width: 30vw; */
     width: 225px;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
     /* left: 0; */
     height: auto;
     right: -10vw;
