@@ -1,6 +1,7 @@
 :root {
     --face-width: 80vw;
     --face-height: 60vh;
+    /* --face-height: minmax(315px, 60vh); */
 }
 
 .cube-scene {
