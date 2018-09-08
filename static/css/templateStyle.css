@@ -1,3 +1,17 @@
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #0000004d;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #848484b5;
+    border-top-left-radius: 50% 3%;
+    border-top-right-radius: 50% 3%;
+    border-bottom-left-radius: 50% 3%;
+    border-bottom-right-radius: 50% 3%;
+
+}
+
 body {
     background: none;
     /* background-color: #212222; */
@@ -174,7 +188,7 @@ body {
         font-size: 16px;
     }
     .text-custom-3 {
-        font-size: 14px;
+        font-size: 12px;
     }
     .text-custom-4 {
         font-size: 12px;

@@ -1,6 +1,7 @@
 :root {
     --face-width: 80vw;
-    --face-height: 50vh;
+    --face-height: 60vh;
+    /* --face-height: minmax(315px, 60vh); */
 }
 
 .cube-scene {
@@ -9,7 +10,8 @@
     width: var(--face-width);
     max-height: var(--face-height);
     position: relative;
-    margin: auto;
+    /* margin: auto; */
+    margin-left: 10vw;
     padding-top: 25px;
     padding-bottom: 25px;
 }
@@ -26,11 +28,13 @@
     position: absolute;
     width: var(--face-width);
     height: var(--face-height);
-    overflow: auto;
+    /* overflow: auto; */
+    padding: 0 3%;
 }
 
 .cube-face-front{
-    /* background-color: rgba(255, 255, 0, 0.473); */
+    background-color: rgba(34, 3, 49, 0.94);
+    color: white;
     -webkit-transform: rotateY(0deg) translateZ(calc(var(--face-width) / 2));
     -moz-transform: rotateY(0deg) translateZ(calc(var(--face-width) / 2));
     -ms-transform: rotateY(0deg) translateZ(calc(var(--face-width) / 2));
@@ -38,7 +42,8 @@
     transform: rotateY(0deg) translateZ(calc(var(--face-width) / 2));
 }
 .cube-face-back {
-    background-color: rgba(39, 123, 196, 0.555);
+    background-color: rgba(47, 34, 5, 0.95);
+    color: white;
     -webkit-transform: rotateY(180deg) translateZ(calc(var(--face-width) / 2));
     -moz-transform: rotateY(180deg) translateZ(calc(var(--face-width) / 2));
     -ms-transform: rotateY(180deg) translateZ(calc(var(--face-width) / 2));
@@ -46,7 +51,8 @@
     transform: rotateY(180deg) translateZ(calc(var(--face-width) / 2));
 }
 .cube-face-right {
-    /* background-color: rgba(255, 62, 62, 0.459); */
+    background-color: rgba(2, 12, 47, 0.95);
+    color: white;
     -webkit-transform: rotateY(90deg) translateZ(calc(var(--face-width) / 2));
     -moz-transform: rotateY(90deg) translateZ(calc(var(--face-width) / 2));
     -ms-transform: rotateY(90deg) translateZ(calc(var(--face-width) / 2));
@@ -54,7 +60,8 @@
     transform: rotateY(90deg) translateZ(calc(var(--face-width) / 2));
 }
 .cube-face-left {
-    /* background-color: rgba(255, 166, 0, 0.548); */
+    background-color: rgba(37, 49, 17, 0.94);
+    color: white;
     -webkit-transform: rotateY(-90deg) translateZ(calc(var(--face-width) / 2));
     -moz-transform: rotateY(-90deg) translateZ(calc(var(--face-width) / 2));
     -ms-transform: rotateY(-90deg) translateZ(calc(var(--face-width) / 2));
@@ -106,11 +113,11 @@
     transform: translateZ(calc(var(--face-width) / 2 * -1)) rotateY(90deg);
 }
 .cube-show-top {
-    -webkit-transform: translateZ(calc(var(--face-width) / 2 * -1)) rotateX(90deg);
-    -moz-transform: translateZ(calc(var(--face-width) / 2 * -1)) rotateX(90deg);
-    -ms-transform: translateZ(calc(var(--face-width) / 2 * -1)) rotateX(90deg);
-    -o-transform: translateZ(calc(var(--face-width) / 2 * -1)) rotateX(90deg);
-    transform: translateZ(calc(var(--face-width) / 2 * -1)) rotateX(90deg);
+    -webkit-transform: translateZ(calc(var(--face-height) / 2 * -1)) rotateX(90deg);
+    -moz-transform: translateZ(calc(var(--face-height) / 2 * -1)) rotateX(90deg);
+    -ms-transform: translateZ(calc(var(--face-height) / 2 * -1)) rotateX(90deg);
+    -o-transform: translateZ(calc(var(--face-height) / 2 * -1)) rotateX(90deg);
+    transform: translateZ(calc(var(--face-height) / 2 * -1)) rotateX(90deg);
 }
 .cube-show-bottom {
     -webkit-transform: translateZ(calc(var(--face-width) / 2 * -1)) rotateX(-90deg);

@@ -20,8 +20,8 @@ def about_me():
     About me
     '''
     if request.method == 'POST':
-        return render_template('aboutMe2.html', title='About Me')
-    return render_template('aboutMe2.html', title='About Me', inital_page=True)
+        return render_template('aboutMe3.html', title='About Me')
+    return render_template('aboutMe3.html', title='About Me', inital_page=True)
 
 @main.route('contactMe', methods=['POST', 'GET'])
 def contact():
