@@ -1,0 +1,113 @@
+<link rel="stylesheet" type="text/css" media="screen" href="static/css/homePage2Style.css" />
+
+{% extends "template2.html" %}
+
+{% block bodyblock %}
+<div class="body">
+    <div class="main-text">
+        Hello World. I am Arek Fielding
+    </div>
+    <div class="button-container">
+        <div class="button" onclick="window.location.replace('/projects')">
+            <div class="button-text">
+                Projects
+            </div>
+        </div>
+        <div class="button">
+            <div class="button-text">
+                Contact
+            </div>
+        </div>
+    </div>
+</div>
+<div class="about-me-section">
+    <div class="header">
+        About Me
+    </div>
+    <div class="text">
+        From Western University in Ontario, Canada I am an aspiring developer with a particular interest in Web and Game Development
+    </div>
+    <div class="divider">
+        <div class="university-container">
+            <div class="image">
+                <img class="icon-image" src="/static/images/university-icon-black.png">
+            </div>
+            <div class="text">
+                I currently attend Western University. There I study Software Engineering and am in my 3rd year.
+            </div>
+        </div>
+        <div class="work-container">
+            <div class="image">
+                <img class="icon-image" src="/static/images/work-icon-black.png">
+            </div>
+            <div class="text">
+                For the past two summers I have been interning at MDA.
+            </div>
+        </div>
+        <div class="work-container">
+            <div class="image">
+                <img class="icon-image" src="/static/images/extra-icon-black.png">
+            </div>
+            <div class="text">
+                Extra stuff here
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="skills-section">
+    <div class="header">
+        Skills
+    </div>
+    <div class="slide-section">
+        <div class="slide">
+            <!-- <div class="description-section">
+                
+            </div> -->
+
+            <!-- These are the bars -->
+            <!-- In the css the number of columns must match up with the number of divs here -->
+            <div class="bar-container"><div class="bar"></div></div>
+            <div class="bar-container"><div class="bar"></div></div>
+            <div class="bar-container"><div class="bar"></div></div>
+            <div class="bar-container"><div class="bar"></div></div>
+            <div class="bar-container"><div class="bar"></div></div>
+            <div class="bar-container"><div class="bar"></div></div>
+            <div class="bar-container"><div class="bar"></div></div>
+            <div class="bar-container"><div class="bar"></div></div>
+            <div class="bar-container"><div class="bar"></div></div>
+            <div class="bar-container"><div class="bar"></div></div>
+            <div class="bar-container"><div class="bar"></div></div>
+            <!-- This is for the the color coding stuff -->
+            <div class="types">
+                <div class="over-labels" style="background-color: #ff6666;">
+                    Web Technologies
+                </div>
+                <div class="over-labels" style="background-color: #ffc06d;">
+                    Programming languages
+                </div>
+                <div class="over-labels" style="background-color: #ffe96d;">
+                    Major Libaries, Extensions, etc.
+                </div>
+                <div class="over-labels" style="background-color: #6dff6d;">
+                    Other Skills
+                </div>
+            </div>
+
+            <!-- These are for the labels -->
+            <div class="bar-label">HTML</div>
+            <div class="bar-label">CSS</div>
+            <div class="bar-label">JavaScript</div>
+            <div class="bar-label">C#</div>
+            <div class="bar-label">C++</div>
+            <div class="bar-label">Python</div>
+            <div class="bar-label">Java</div>
+            <div class="bar-label">NodeJS</div>
+            <div class="bar-label">TensorFlow</div>
+            <div class="bar-label">Design</div>
+            <div class="bar-label">NodeJS</div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

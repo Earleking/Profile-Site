@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+}
+
+.top-nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+    color: white;
+    font: menu;
+    font-size: large;
+    padding-top: 30px;
+    padding-right: 60px;
+}
+
+.nav-list-item {
+    display: inline;
+    padding-left: 30px;
+    transition: 0.33s;
+}
+
+.nav-list-item:hover {
+    color: rgb(141, 141, 141);
+    cursor: pointer;
+}
+
+.header {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 50px;
+}
+
+.text {
+    text-align: center;
+    padding-top: 25px;
+    font-size: 22px;
+    padding-bottom: 25px;
+    color: #454545;
+}

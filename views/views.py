@@ -11,8 +11,8 @@ def home():
     '''
     
     if request.method == 'POST':
-        return render_template('homePage.html', title="Arek Fielding")
-    return render_template('homePage.html', title="Arek Fielding", inital_page=True)
+        return render_template('homePage2.html', title="Arek Fielding")
+    return render_template('homePage2.html', title="Arek Fielding", inital_page=True)
 
 @main.route('aboutMe', methods=['POST', 'GET'])
 def about_me():

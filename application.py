@@ -2,7 +2,7 @@ from flask import Flask
 
 def create_app():
     app = Flask(__name__, static_url_path='/static')
-    app.config.from_pyfile('config.py')
+    app.config.from_pyfile('instance/config.py')
     configure_extenstions(app)
 
     configure_blueprints(app)

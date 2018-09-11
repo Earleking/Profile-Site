@@ -1,0 +1,117 @@
+.body {
+    height: 100vh;
+    /* width: 100vw; */
+    background-image: url('/static/images/dark-scenery.jpg');
+    filter: grayscale(75%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main-text {
+    text-align: center;
+    position: relative;
+    top: 40vh;
+    font-size: 60px;
+    color: white;
+}
+
+.button-container {
+    /* width: 100vw; */
+    top: 45vh;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.button {
+    width: 200px;
+    height: 70px;
+    border: 2px solid white;
+    display: inline-block;
+    transition: .5s;
+}
+
+.button-text {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    transition: .5s;
+}
+
+.button:hover .button-text {
+    color: black;
+
+}
+
+.button:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+.divider {
+    display: grid;
+    /* grid-template-columns: auto auto auto; */
+    grid-template-columns: repeat(auto-fit, 350px);
+    justify-content: space-evenly;
+    padding: 20px 5%;
+}
+
+img.icon-image {
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+}
+
+.skills-section {
+    background-color: #e4e4e4;
+}
+
+.slide-section {
+    overflow: auto;
+    width: 80vw;
+    margin: auto;
+}
+
+.slide {
+    display: grid;
+    /* grid-template-columns: 50px 50px 50px; */
+    /* Change this to be variable with screen size later */
+    grid-template-columns: repeat(11, 100px); 
+    row-gap: 10px;
+}
+.bar-container {
+     position: relative;
+     height: 100px;
+}
+
+.bar {
+    width: 15px;
+    height: 50px;
+    background-color: #4c4c4c;
+    border-top-left-radius: 50% 10px;
+    border-top-right-radius: 50% 10px;
+    border-bottom-left-radius: 50% 10px;
+    border-bottom-right-radius: 50% 10px;
+    bottom: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.types {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 27% 36% 18% auto;
+}
+
+.bar-label {
+    text-align: center;
+    font-style: italic;
+}
+
+.over-labels {
+    text-align: center;
+}
